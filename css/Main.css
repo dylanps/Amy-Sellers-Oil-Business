@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(202, 199, 199);
+    background-color: white;
     padding-top: 75px;
 }
 
@@ -247,20 +247,28 @@ span.price {
     transition: color 0.2s;
 }
 
-#myFooter .fa-facebook:hover {
-    color: #2b55ff;
-}
-
-#myFooter .fa-facebook:focus {
-    color: #2b55ff;
-}
-
 #myFooter .fa-envelope:hover {
     color: green;
 }
 
 #myFooter .fa-envelope:focus {
     color: green;
+}
+
+#myFooter .fa-facebook:hover {
+    color: #3b5998;
+}
+
+#myFooter .fa-facebook:focus {
+    color: #3b5998;
+}
+
+#myFooter .fa-linkedin:hover {
+    color: #0077B5;
+}
+
+#myFooter .fa-linkedin:focus {
+    color: #0077B5;
 }
 
 @media screen and (max-width: 767px) {
