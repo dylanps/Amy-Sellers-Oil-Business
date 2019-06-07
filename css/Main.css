@@ -87,7 +87,17 @@ body {
     padding-left: 10%;
 }
 
-/* PRODUCTS PAGE*/
+.intro-video {
+    text-align: center;
+}
+
+.intro-quote {
+    background-color: rgb(8, 102, 93);
+    color: white;
+    text-align: center;
+    text-overflow: wrap;
+    padding: 20px 0px;
+}
 
 /* Flexbox */
 @media(min-width:767px) {
@@ -129,67 +139,10 @@ body {
     box-shadow: -5px 5px 15px grey;
 }
 
-.product-label {
-    /* margin: auto; */
-}
-
-.product-label h6{
-    text-align: center;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-
-}
-
-.product-image {
-    height: 140px;
-    width: 140px;
-}
-
-.product-price {
-    font-family: oxygen;
-}
-
-.button-div {
-    display: flex;
-    flex-direction: row;
-    margin-left: 110px;
-    margin-right: 110px;
-    justify-content: space-between;
-}
-
-.button-div button {
-    border-radius: 50%;
-}
-
-.heart:hover {
-    color: red;
-}
-
-.cart:hover {
-    color: green;
-}
-
-
-
-aside.myCart {
-    flex:1;
-    background-color: #e7e4e4;
-    border-radius: 3px;
-    padding: 20px;
-}
-
-#myCart .checkoutButton {
-    position: 10%;
-}
-
-/* CHECKOUT PAGE */
-
-.checkoutButton {
-    border-radius: 8px;
-}
-
-span.price {
-    float: right;
-    color: grey;
+.contact-form {
+    background-color: rgb(8, 102, 93);
+    padding: 2em;
+    color: white;
 }
 
 /* FOOTER CSS */
