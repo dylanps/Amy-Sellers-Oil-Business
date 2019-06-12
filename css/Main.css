@@ -113,7 +113,7 @@ body {
 
 /* CSS Grid */
 #product-list {
-    flex:4;
+    flex: 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -139,10 +139,44 @@ body {
     box-shadow: -5px 5px 15px grey;
 }
 
-.contact-form {
+.contact-form-bar {
     background-color: rgb(8, 102, 93);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contact-form {
     padding: 2em;
     color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-form-left {
+    order: 0;
+    background-color: grey;
+}
+
+.contact-form-right {
+    order: 1;
+    background-color: silver;
+}
+
+.left-item {
+    order: -1;
+    width: 40%;
+}
+
+.right-item {
+    order: 1;
+    width: 60%;
+}
+
+#contact-invite {
+    background-color: #ccc;
 }
 
 /* FOOTER CSS */

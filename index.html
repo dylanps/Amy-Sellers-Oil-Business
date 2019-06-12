@@ -18,12 +18,10 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="/css/Main.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/Main.css">
 
     <!-- The tile is the label for the tab in the browser -->
     <title>My Shop | Welcome</title>
   </head>
-
 
   <!-- Header -->
     <header>
@@ -81,9 +79,15 @@
 </div>
 
 <div class="intro-quote">
-  <p>
+  <h4>
     Essential oils have changed my life and my family's life for the better. I want to show you how they can change yours.
-  </p>
+  </h4>
+
+  <br>
+
+  <h6>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non natus eos eaque modi neque accusantium dignissimos voluptates? Cupiditate at voluptatibus voluptas, quia debitis corporis, laudantium, ullam natus commodi eaque deserunt.
+  </h6>
 </div>
 
 <!-- CAROUSEL -->
@@ -164,24 +168,39 @@
   </div>
 </div>
 
+<div class="contact-form-bar">
+  <div class="left-item" id="contact-invite">
+    <img src="" alt="?">
+    <p>
+      Please feel free to reach out. I am happy to be a resource 
+    </p>
+  </div>
 
-<div class="contact-form">
-  <form action="submit" method="get">
-    Name: <br>
-    <input type="text" name="Name"> <br> <br>
-    Email: <br>
-    <input type="text" name="Email">
+  <div class="right-item">
 
-    <input type="">
+      <form action="submit" method="get" class="contact-form">
+          <div class="contact-form-left">
+            <h2>
+              Questions?
+            </h2>
+        
+            Name:
+            <input type="text" name="Name">
+            Email:
+            <input type="text" name="Email" value=Email>
+          </div>
+          
+          <div class="contact-form-right">
+            <textarea name="What's on your mind?" id="" cols="40" rows="5"></textarea>
+      
+            <input type="submit" value="Send">
+          </div>
+      </form>
 
-    <input type="submit">
-
-  </form>
+  </div>
 </div>
 
-
   <body>
-
     <!-- CONNECT TO MAIN JS FILE -->
     <script src="/Main.js"></script>
 
