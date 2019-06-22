@@ -1,3 +1,5 @@
+/* @import url(http://fonts.googleapis.com/css?family=encode+sans); */
+
 body {
     background-color: white;
     padding-top: 75px;
@@ -10,27 +12,28 @@ body {
     overflow: hidden;
 }
 
+/* CARD DECK */
+
 .card-deck {
     padding: 0% 10% 2% 10%;
     position: center;
     width: 100%;
 }
 
-.crop {
-   padding-right: -50px;
+.card-link .card:hover {
+    box-shadow: -5px 5px 10px grey;
+
 }
 
-.carousel {
-    height: 832px;
-    padding-top: 1%;
+.card-link {
+    color: black;
+    border: 0; 
 }
 
-.sidebar {
-    float:right;
-    width: 20%;
-    margin-top: 10px;
-    text-align: left;
+.card-link:hover {
+    color: #114266;
 }
+
 
 .header{
     color: white;
@@ -40,10 +43,6 @@ body {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 300;
-}
-
-#home-carousel {
-    padding-top: 50px;
 }
 
 .footer{
@@ -69,7 +68,7 @@ body {
 }
 
 .footer-right {
-   float: right;
+    float: right;
     width: 25%;
 }
 
@@ -78,8 +77,34 @@ body {
     height: 100px;
 }
 
+/* NAVBAR */
+
 #home-nav-container {
     padding-left: 10%;
+}
+
+.navbar .navbar-expand-lg .bg-white {
+    color: #114266;
+}
+
+#home-greeting {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #114266;
+}
+
+#home-greeting-img {
+    order: -1;
+    width: 280px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+#home-greeting-text {
+    order: 1;
+    width: 700px;
+    color: white;
 }
 
 #products-nav-container {
@@ -89,14 +114,26 @@ body {
 
 .intro-video {
     text-align: center;
+    margin: 2% 0% 4% 0%;
 }
 
-.intro-quote {
-    background-color: rgb(8, 102, 93);
+#invite-to-about {
+    background-color: #0077B9;
+    margin: 2% 0%;
     color: white;
     text-align: center;
-    text-overflow: wrap;
     padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-invitation {
+    order: 1;
+    margin: 1%;
+}
+
+#explore-button {
+    order: 1;
 }
 
 /* Flexbox */
@@ -140,19 +177,19 @@ body {
 }
 
 .contact-form-bar {
-    background-color: rgb(8, 102, 93);
+    background-color: #114266;
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly; */
 
 }
 
 .contact-form {
-    padding: 2em;
+    padding: 1em;
     color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .contact-form-left {
@@ -163,20 +200,30 @@ body {
 .contact-form-right {
     order: 1;
     background-color: silver;
+    padding: 1em;
+    border-left: 1px solid white;
+}
+
+#home-send {
+   right: 10px;
 }
 
 .left-item {
     order: -1;
-    width: 40%;
 }
 
 .right-item {
     order: 1;
-    width: 60%;
 }
 
 #contact-invite {
-    background-color: #ccc;
+    background-color:#114266;
+    color: white;
+    padding: 1em;
+}
+
+hr {
+    border: 0.5px solid white;
 }
 
 /* FOOTER CSS */
