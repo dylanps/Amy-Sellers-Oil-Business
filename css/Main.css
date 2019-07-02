@@ -289,8 +289,7 @@ h3 {
 }
 
 #about-amy {
-    width: 20%;
-    height: 80%;
+    width: 29%;
     color: white;
     background-color: #0077B9;
     margin: 0;
@@ -298,8 +297,6 @@ h3 {
 }
 
 #about-amy-pic {
-    width: 80%;
-    height: 80%;
     margin-top: 1em;
 }
 
@@ -308,12 +305,13 @@ h3 {
 #about-family {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    background-color: white;
+    width: 70%;
     height: 80%;
-    background-color: #ccc;
     margin: 0;
     text-align: center;
     padding: 1em;
+    z-index: -100;
     position: relative;
 }
 
@@ -369,15 +367,25 @@ h3 {
 }
 
 #about-info-dot {
-    width: 50%;
-    height: 200px;
+    width: 42%;
+    height: 40%;
     background-color: white;
-    border: 3px solid #0077B9;
-    border-radius: 50%;
+    /* border: 3px solid #0077B9; */
+    border-radius: 5%;
     position: absolute;
-    left: 468px;
-    top: 330px;
+    left: 29%;
+    top: 30%;
+    overflow: auto;
+    z-index: -99;
+}
+
+#about-info-text {
+    font-size: 15px;
     text-align: center;
+    padding: 10px 0px;
+    line-height: 1.75;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .profile {
@@ -387,10 +395,7 @@ h3 {
 
 .profile:hover {
     border: 2px solid gold;
-}
-
-#about-info-text {
-    
+    box-shadow: 0 0 10px gold;
 }
 
 #glen-profile {
