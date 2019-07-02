@@ -21,6 +21,25 @@
 
     <!-- The tile is the label for the tab in the browser -->
     <title>10 Kids Later | Welcome</title>
+
+    <!-- LOAD EMAILJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_7JCBclOAwgVAIE89BG8Zb");
+       })();
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('home-contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              this.contact_number.value = Math.random() * 100000 | 0;
+              emailjs.sendForm('contact_service', 'contact_template', this);
+          });
+      }
+    </script>
+
   </head>
 
   <!-- Header -->
@@ -28,7 +47,7 @@
         <div class="header">
 
            <!--NAVBAR-->
-          <nav class="navbar navbar-expand-lg bg-white" id=home-nav-container>
+          <nav class="navbar navbar-expand-lg bg-white" id="home-nav-container">
             <div>
               
             </div>  
@@ -42,16 +61,16 @@
                     <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item-active">
-                    <a class="nav-link" href="#">Essential Oils<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item-active">
-                    <a class="nav-link" href="#">Q & A<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="answerswithamy.html">Answers with Amy<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item-active">
-                    <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item-active">
-                    <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                   </li>
                   <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -71,7 +90,7 @@
 
 <!-- Youtube Embedding-->
 <div class="intro-video">
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/WsY-xGCZSng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe  src="https://www.youtube.com/embed/WsY-xGCZSng" id="home-youtube-intro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
  <!-- JUMBOTRON -->
@@ -132,45 +151,62 @@
 <div id="invite-to-about">
     <div id="about-invitation">
       <h4>
-          If you are looking for a good reason to start using essential oils, don't worry, I have 10! <br> <br>
-  
-          See how my kids use Doterra's products and why they love them.
+        If you are looking for a good reason to start using essential oils, don't worry... 
+      </h4>
+          <br> <h1>I have 10!</h1> <br>
+      <h4>
+        See how my kids use Doterra's products and why they love them.
       </h4>
     </div>
     <div id="explore-button">
-       <button class="button btn-outline-primary">Explore</button> <!-- add link to the about page -->
+       <button class="button">Explore</button> <!-- add link to the about page -->
     </div>
   </div>
 
   <!-- CONTACT FORM-->
 
-<div class="contact-form-bar">
-  <div class="left-item" id="contact-invite">
-    <h2>
-      Questions?
-    </h2>
-    <hr>
-    <p>
-      Check out my blog! I've written articles on dozens of topics. If you didn't find your answer, send me an email and I'll get back to your within 2 business days.
-    </p>
+<div class="contact-and-newsletter">
+  <!-- LEFT SIDE -->
+  <div class="left-item" id="contact-form">
+    
+    <div id="">
+      <h2>
+        Questions?
+      </h2>
+      <hr class="title-underline">
+      <p>
+        Check out <a href="answerswithamy.html" class="white-text-link">my blog</a>! I've written articles on dozens of topics. If you didn't find your answer, send me an email and I'll get back to your within 2 business days.
+      </p>
+    </div>
+    <form action="submit" method="Post" action="javascript:sendMail('dylan.sellers@hotmail.com','Home-page-Email');" enctype=”multipart/form-data” id="home-contact-form">
+      <div class="contact-form-left">
+        <input type="text" name="Name" placeholder=" Name" id="home-contact-form-name-input">
+        <input type="text" name="Email" placeholder=" Email" id="home-contact-form-email-input">
+        <input type="submit" value="Send" class="send-button" id="home-contact-form-send">
+      </div>
+      <div class="contact-form-right">
+        <textarea placeholder=" What's on your mind?" id="home-email-message-input"></textarea>
+      </div>
+    </form>
   </div>
 
-  <div class="right-item">
+  <!-- CENTER DIVIDER -->
+  <div id="separator"></div>
 
-      <form action="submit" method="get" class="contact-form">
-          <div class="contact-form-left">
-            Name:
-            <input type="text" name="Name"> <br> <br>
-            Email:
-            <input type="text" name="Email" value=Email>
-          </div>
-          
-          <div class="contact-form-right">
-            <textarea name="What's on your mind?" id="" cols="40" rows="5"></textarea>
-      
-            <input type="submit" value="Send" id="home-send">
-          </div>
-      </form>
+    <!-- RIGHT SIDE -->
+  <div class="right-item" id="home-newsletter-form">
+
+    <h2>
+      Want Updates?
+    </h2>
+    <hr>
+
+    <p>Sign up for my newsletter! I promised not to burden you with spammy email threads. You can expect <u>1 to 2 emails per month </u> with relevant information on oils to keep you informed.</p>
+
+    <form action="submit" id="email newsletter form">
+      <input type="email" name="Email" placeholder=" Email" id="newsletter-input">
+      <input type="submit">
+    </form>
 
   </div>
 </div>

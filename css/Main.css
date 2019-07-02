@@ -1,15 +1,56 @@
 /* @import url(http://fonts.googleapis.com/css?family=encode+sans); */
 
+/* GLOBAL */
+
 body {
     background-color: white;
     padding-top: 75px;
 }
 
-/* GLOBAL */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+
+.white-text-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.white-text-link:hover {
+    color: gold;
+}
+
+hr {
+    border: 0.5px solid white;
+}
+
+h3 {
+    color: #114266;
+}
+
+.left-item {
+    order: -1;
+}
+
+.right-item {
+    order: 1;
+}
+
+.send-button {
+    background-color: rgba(10, 153, 8, 0.788);
+    color: white;
+    border-radius: 14px;
+    width: 6em;
+    float: right;
+}
+
+/* HOME PAGE */
+
+#home-youtube-intro {
+    width: 80%;
+    height: 480px;
 }
 
 /* CARD DECK */
@@ -33,7 +74,6 @@ body {
 .card-link:hover {
     color: #114266;
 }
-
 
 .header{
     color: white;
@@ -87,6 +127,16 @@ body {
     color: #114266;
 }
 
+.nav-link {
+    color: #114266;
+}
+
+.nav-link:hover {
+    color: #0077B9;
+    background-color: rgba(224, 223, 223, 0.363);
+    border: 1px black;
+}
+
 #home-greeting {
     display: flex;
     flex-wrap: wrap;
@@ -136,94 +186,311 @@ body {
     order: 1;
 }
 
-/* Flexbox */
-@media(min-width:767px) {
-    .products-container {
-        display: flex;
-        width: 95%;
-        /* margin: auto; */
-        overflow: hidden;
-        justify-content: space-between;
-        max-height: 550px;
-    }
-}
+/* CONTACT FORM */
 
-/* CSS Grid */
-#product-list {
-    flex: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    background-color: white;
-    padding: 10px 0px 0px 30px;
-    overflow-y: scroll;
-}
-
-.product-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgb(237, 236, 234);
-    color: black;
-    min-height: 250px;
-    max-width: 300px;
-    text-align: center;
-}
-
-.product-box:hover {
-    box-shadow: -5px 5px 15px grey;
-}
-
-.contact-form-bar {
+.contact-and-newsletter {
     background-color: #114266;
     display: flex;
-    /*justify-content: space-evenly; */
-
+    /* flex-wrap: wrap; */
 }
 
-.contact-form {
+.title-underline {
+    order: 2;
+}
+
+#contact-form {
     padding: 1em;
     color: white;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#home-contact-form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
+    order: 2;
+}
+
+#home-contact-form-invite {
+    order: 1;
 }
 
 .contact-form-left {
-    order: 0;
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    order: 1;
+    width: 30%;
+    height: 150px;
 }
+
+#home-contact-form-name-input {
+    order: 1;
+    border-radius: 10px;
+}
+
+#home-contact-form-email-input {
+    order: 2;
+    border-radius: 10px;
+}
+
+#home-contact-form-send {
+    order: 3;
+    height: 30px;
+}
+
+/* RIGHT SIDE OF CONTACT FORM */
 
 .contact-form-right {
-    order: 1;
-    background-color: silver;
+    display: flex;
+    order: 2;
     padding: 1em;
-    border-left: 1px solid white;
+    width: 70%;
 }
 
-#home-send {
-   right: 10px;
+#home-email-message-input {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.left-item {
-    order: -1;
+#separator {
+    background-color: white;
+    width: 1em;
+    order: 2;
 }
 
-.right-item {
-    order: 1;
-}
 
-#contact-invite {
-    background-color:#114266;
+#home-newsletter-form {
     color: white;
-    padding: 1em;
+    padding: 1em; 
+    order: 3;
 }
 
-hr {
-    border: 0.5px solid white;
+#newsletter-input {
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+.about-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#about-amy {
+    width: 20%;
+    height: 80%;
+    color: white;
+    background-color: #0077B9;
+    margin: 0;
+    text-align: center;
+}
+
+#about-amy-pic {
+    width: 80%;
+    height: 80%;
+    margin-top: 1em;
+}
+
+/* INTERACTIVE FAMILY PAGE */
+
+#about-family {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    background-color: #ccc;
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+#about-family-row-1 {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+    justify-content: center;
+}
+
+#about-family-row-2 {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    justify-content: center;
+}
+
+#about-family-row-3 {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    justify-content: center;
+}
+
+/* About info Dot */
+#about-family-row-4 {
+    display: flex;
+    flex-direction: row;
+    order: 4;
+    justify-content: center;
+    margin: -18% 0% 0% 0%;
+}
+
+#about-family-row-5 {
+    display: flex;
+    flex-direction: row;
+    order: 5;
+    justify-content: center;
+}
+
+#about-family-row-6 {
+    display: flex;
+    flex-direction: row;
+    order: 6;
+    justify-content: center;
+}
+
+#about-family-row-7 {
+    display: flex;
+    flex-direction: row;
+    order: 7;
+    justify-content: center;
+}
+
+#about-info-dot {
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    border: 3px solid #0077B9;
+    border-radius: 50%;
+    position: absolute;
+    left: 468px;
+    top: 330px;
+    text-align: center;
+}
+
+.profile {
+    width: 15%;
+    height: 15%;
+}
+
+.profile:hover {
+    border: 2px solid gold;
+}
+
+#about-info-text {
+    
+}
+
+#glen-profile {
+    margin-right: 1%;
+}
+
+#amy-profile-about {
+
+}
+
+#tanner-profile {
+    margin-right: 30%;
+    margin-top: -9%;
+}
+
+#ivy-profile {
+    margin-top: -9%;
+}
+
+#katy-profile {
+    margin-right: 45%;
+    margin-top: -2%;
+}
+
+#chelsea-profile {
+    margin-top: -2%;
+}
+
+#natalie-profile {
+    margin-right: 45%;
+    margin-top: 0%;
+}
+
+#tim-profile {
+    margin-top: 0%;
+}
+
+#dylan-profile {
+    margin-right: 30%;
+    margin-top: -2%;
+}
+
+#megan-profile {
+    margin-top: -2%;
+}
+
+#meri-profile {
+    margin-right: 1%;
+    margin-top: -9%;
+}
+
+#chad-profile {
+    margin-top: -9%;
+}
+
+/* CONTACT PAGE */
+
+.contact-page-container {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-page-hr {
+    border: #0077B9 10px solid;
+}
+
+#contact-name-label {
+    order: 0;
+    padding: 8px 8px 8px 8px;
+}
+
+#contact-name-input {
+    order: 1;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+}
+
+#contact-email-label {
+    order: 2;
+    padding: 8px 8px 8px 8px;
+}
+
+#contact-email-input {
+    order: 3;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+}
+
+#contact-message-label {
+    order: 4;
+    padding: 8px 8px 0px 8px;
+}
+
+#contact-message-input {
+    order: 5;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #E5E5E5;
 }
 
 /* FOOTER CSS */
@@ -312,4 +579,30 @@ hr {
     #myFooter .row {
         margin: 0;
     }
+}
+
+
+/* Flexbox */
+@media(min-width:767px) {
+    .products-container {
+        display: flex;
+        width: 95%;
+        /* margin: auto; */
+        overflow: hidden;
+        justify-content: space-between;
+        max-height: 550px;
+    }
+}
+
+/* CSS Grid */
+#product-list {
+    flex: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    background-color: white;
+    padding: 10px 0px 0px 30px;
+    overflow-y: scroll;
 }
