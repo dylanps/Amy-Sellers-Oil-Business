@@ -46,11 +46,35 @@ h3 {
     float: right;
 }
 
+/* NAVBAR */
+
+#home-nav-container {
+    padding-left: 10%;
+}
+
+.navbar .navbar-expand-lg .bg-white {
+    color: #114266;
+}
+
+.nav-link {
+    color: #114266;
+}
+
+.nav-link:hover {
+    color: #0077B9;
+    background-color: rgba(224, 223, 223, 0.363);
+    border: 1px black;
+}
+
 /* HOME PAGE */
 
 #home-youtube-intro {
     width: 80%;
     height: 480px;
+}
+
+.ten-kids-picture {
+    margin: 0.5% 0% 1% 0%;
 }
 
 /* CARD DECK */
@@ -62,8 +86,7 @@ h3 {
 }
 
 .card-link .card:hover {
-    box-shadow: -5px 5px 10px grey;
-
+    box-shadow: -5px 5px 10px 5px grey;
 }
 
 .card-link {
@@ -117,26 +140,6 @@ h3 {
     height: 100px;
 }
 
-/* NAVBAR */
-
-#home-nav-container {
-    padding-left: 10%;
-}
-
-.navbar .navbar-expand-lg .bg-white {
-    color: #114266;
-}
-
-.nav-link {
-    color: #114266;
-}
-
-.nav-link:hover {
-    color: #0077B9;
-    background-color: rgba(224, 223, 223, 0.363);
-    border: 1px black;
-}
-
 #home-greeting {
     display: flex;
     flex-wrap: wrap;
@@ -157,11 +160,6 @@ h3 {
     color: white;
 }
 
-#products-nav-container {
-    grid-column: 1/4;
-    padding-left: 10%;
-}
-
 .intro-video {
     text-align: center;
     margin: 2% 0% 4% 0%;
@@ -169,7 +167,7 @@ h3 {
 
 #invite-to-about {
     background-color: #0077B9;
-    margin: 2% 0%;
+    margin: 2% 0% 0% 0%;
     color: white;
     text-align: center;
     padding: 20px 0px;
@@ -274,10 +272,92 @@ h3 {
 
 
 
+/* ESSENTIAL OILS */
+
+.ee-page-container {
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 1%;
+}
+
+#ee-left {
+    order: 1;
+    width: 80%;
+    padding-top: 3%;
+}
+
+#ee-right {
+    order: 2;
+    flex: 1;
+    background-color: #114266;
+    margin-left: 1%;
+    color: white;
+}
 
 
+/* ANSWERS WITH AMY */
 
+.awa-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 1%;
+}
 
+#blog-title-container {
+    order: 1;
+}
+
+#featured-blog-entries {
+    order: 2;
+}
+
+#awa-more-topics {
+    order: 3;
+}
+
+.more-topics {
+    background-color: white;
+    padding: 1% 0% 0% 0%;
+    text-align: center;
+    border: 5px gold solid;
+    border-radius: 5px;
+}
+
+.topic-list {
+    text-align: center;
+}
+
+li.topic {
+    display: inline-block;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+li.topic:hover {
+    color: white;
+    background-color: #114266;
+}
+
+.blog-deck {
+    margin: 0% 0% 2% 0%;
+    padding: 0;
+    background-color: #ccc;
+}
+
+.blog-card {
+    padding: 0;
+    margin: 0;
+}
+
+.blog-title-container {
+    padding: 2%;
+}
+
+.blog-hr {
+    border: #0077B9 10px solid;
+}
 
 
 /* ABOUT PAGE */
@@ -285,7 +365,6 @@ h3 {
 .about-page-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
 }
 
 #about-amy {
@@ -309,9 +388,8 @@ h3 {
     width: 70%;
     height: 80%;
     margin: 0;
-    text-align: center;
-    padding: 1em;
-    z-index: -100;
+    padding-top: 1em;
+    /* z-index: -100; */
     position: relative;
 }
 
@@ -376,7 +454,7 @@ h3 {
     left: 29%;
     top: 30%;
     overflow: auto;
-    z-index: -99;
+    z-index: 1;
 }
 
 #about-info-text {
@@ -391,12 +469,14 @@ h3 {
 .profile {
     width: 15%;
     height: 15%;
+    z-index: 2;
 }
 
 .profile:hover {
-    border: 2px solid gold;
+    border: 1px solid gold;
     box-shadow: 0 0 10px gold;
 }
+
 
 #glen-profile {
     margin-right: 1%;
@@ -454,9 +534,24 @@ h3 {
 /* CONTACT PAGE */
 
 .contact-page-container {
-    padding: 5%;
+    height: 550px;
     display: flex;
     justify-content: space-between;
+    padding: 0% 1%;
+}
+
+#contact-left {
+    order: 1;
+    width: 80%;
+    padding-top: 3%;
+}
+
+#contact-right {
+    order: 2;
+    flex: 1;
+    background-color: #114266;
+    margin-left: 1%;
+    color: white;
 }
 
 #contact-page-hr {
@@ -505,7 +600,7 @@ h3 {
     color: white;
     position: absolute;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #map-container {
