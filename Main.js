@@ -1,7 +1,5 @@
 //code that changes text based on clicking a profile image.
 
-console.log('this js loaded');
-
 const Amy = document.getElementById('amy-profile-about');
 const Glen = document.getElementById('glen-profile');
 const Ivy = document.getElementById('ivy-profile');
@@ -74,28 +72,6 @@ Tanner.addEventListener("mouseenter", function() {
     console.log('clicked on Tanner');
     document.getElementById('about-info-text').innerHTML = 'Insert Tanner-bio here';
 });
-
-console.log('so did this!');
-
-//responsive welcome text w/ profile pic
-
-/*
-if(screen size is less than [1250] pixels wide) {
-
-    //grab the element and make it center the contents of the child divs.
-    const homeProfilePic = document.getElementById(home-greeting)
-
-
-}
-else {
-    //keep it the same
-}
-*/
-
-
-
-
-
 
 // example code
 

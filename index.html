@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Meta tags for SEO - FILL IN DESCRIPTION AND KEY WORDS HERE! -->
-    <meta name="description" content="...">
+    <meta name="description" content="150-160 words">
     <meta name="keywords" content="Essential oils, Doterra, Placerville, Sacramento, Amy Sellers">
 
     <!-- Bootstrap CSS -->
@@ -55,7 +56,7 @@
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item-active">
                     <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
@@ -171,15 +172,13 @@
       <h4>
         See how my kids use Doterra's products and why they love them.
       </h4>
+      <a href="about.html"><button class="button" id="explore-button">Explore</button></a> <!-- add link to the about page -->
     </div>
-    <div id="explore-button">
-       <button class="button">Explore</button> <!-- add link to the about page -->
-    </div>
-  </div>
+</div>
 
   <!-- FAMILY PICTURE -->
-  <div class="ten-kids-picture">
-      <img src="/Images/10 Kids Picture.png" alt="?">
+  <div>
+      <img src="/Images/10 Kids Picture.png" alt="?" class="ten-kids-picture">
   </div>
   
 
@@ -200,12 +199,12 @@
     </div>
     <form action="submit" method="Post" action="javascript:sendMail('dylan.sellers@hotmail.com','Home-page-Email');" enctype=”multipart/form-data” id="home-contact-form">
       <div class="contact-form-left">
-        <input type="text" name="Name" placeholder=" Name" id="home-contact-form-name-input">
-        <input type="text" name="Email" placeholder=" Email" id="home-contact-form-email-input">
+        <input type="text" class="input-field" name="Name" placeholder=" Name" id="home-contact-form-name-input">
+        <input type="text" class="input-field" name="Email" placeholder=" Email" id="home-contact-form-email-input">
         <input type="submit" value="Send" class="send-button" id="home-contact-form-send">
       </div>
       <div class="contact-form-right">
-        <textarea placeholder=" What's on your mind?" id="home-email-message-input"></textarea>
+        <textarea placeholder=" What's on your mind?" class="input-field" id="home-email-message-input"></textarea>
       </div>
     </form>
   </div>
@@ -224,8 +223,8 @@
     <p>Sign up for my newsletter! I promised not to burden you with spammy email threads. You can expect <u>1 to 2 emails per month </u> with relevant information on oils to keep you informed.</p>
 
     <form action="submit" id="email newsletter form">
-      <input type="email" name="Email" placeholder=" Email" id="newsletter-input">
-      <input type="submit">
+      <input type="email" class="input-field" name="Email" placeholder=" Email" id="newsletter-input">
+      <input type="submit" class="submit-button">
     </form>
 
   </div>
@@ -244,7 +243,7 @@
 
   <footer id="myFooter">
       <div class="social-networks">
-          <a href="mailto: support@myshop.com" class="email"><i class="fa fa-envelope"></i></a> <!-- UPDATE THIS EMAIL TO YOUR SUPPORT EMAIL, consider using a form to mitigate attacks from spam bots--> 
+          <a href="contact.html" class="email"><i class="fa fa-envelope"></i></a>
           <a href="https://www.facebook.com/10kidslater/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> <!--UPDATE THIS LINK TO YOUR FB PAGE-->
           <a href="https://www.linkedin.com/in/amy-sellers-3926ba3/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a> <!--UPDATE THIS LINK TO YOUR FB PAGE-->
       </div>

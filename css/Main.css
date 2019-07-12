@@ -30,6 +30,10 @@ h3 {
     color: #114266;
 }
 
+.sub-heading {
+    color: rgba(128, 128, 128, 0.795);
+}
+
 .left-item {
     order: -1;
 }
@@ -39,11 +43,28 @@ h3 {
 }
 
 .send-button {
-    background-color: rgba(10, 153, 8, 0.788);
+    /* background-color: rgba(10, 153, 8, 0.788); */
+    background-color: rgb(4, 184, 100);
     color: white;
+    border: 0;
     border-radius: 14px;
     width: 6em;
     float: right;
+    font-size: 16px;
+}
+
+.submit-button {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(238, 203, 5);
+    color: white;
+    font-size: 16px;
+}
+
+.input-field {
+    border: 0;
 }
 
 /* NAVBAR */
@@ -66,6 +87,10 @@ h3 {
     border: 1px black;
 }
 
+.collapse .navbar-collapse {
+    justify-content: right;
+}
+
 /* HOME PAGE */
 
 #home-youtube-intro {
@@ -75,6 +100,7 @@ h3 {
 
 .ten-kids-picture {
     margin: 0.5% 0% 1% 0%;
+    width: 100%;
 }
 
 /* CARD DECK */
@@ -83,15 +109,17 @@ h3 {
     padding: 0% 10% 2% 10%;
     position: center;
     width: 100%;
+    /* background-image: radial-gradient(white 70%, rgb(194, 194, 194)); */
 }
 
 .card-link .card:hover {
-    box-shadow: -5px 5px 10px 5px grey;
+    box-shadow: -5px 5px 10px 5px rgba(177, 177, 177, 0.616);
+
 }
 
 .card-link {
     color: black;
-    border: 0; 
+    border: 0;
 }
 
 .card-link:hover {
@@ -144,6 +172,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    background-image: linear-gradient(to left top, #114266 80%, white);
     background-color: #114266;
 }
 
@@ -166,7 +195,7 @@ h3 {
 }
 
 #invite-to-about {
-    background-color: #0077B9;
+    background-image: linear-gradient(to right, #0077B9, rgb(61, 90, 100));
     margin: 2% 0% 0% 0%;
     color: white;
     text-align: center;
@@ -181,15 +210,24 @@ h3 {
 }
 
 #explore-button {
+    margin-top: 1%;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(238, 203, 5);
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    font-size: 18px;
     order: 1;
 }
 
 /* CONTACT FORM */
 
 .contact-and-newsletter {
-    background-color: #114266;
+    /* background-color: #114266; */
+    background-image: linear-gradient(to bottom, #114266, rgb(61, 90, 100));
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: row;
 }
 
 .title-underline {
@@ -237,6 +275,7 @@ h3 {
 #home-contact-form-send {
     order: 3;
     height: 30px;
+    margin: 0px 5px;
 }
 
 /* RIGHT SIDE OF CONTACT FORM */
@@ -268,6 +307,7 @@ h3 {
 
 #newsletter-input {
     border-radius: 10px;
+    margin: 0% 2% 0% 0%;
 }
 
 
@@ -330,7 +370,7 @@ h3 {
 
 li.topic {
     display: inline-block;
-    background-color: #ccc;
+    background-color: rgb(230, 230, 230);
     border-radius: 5px;
     padding: 5px;
 }
@@ -343,7 +383,7 @@ li.topic:hover {
 .blog-deck {
     margin: 0% 0% 2% 0%;
     padding: 0;
-    background-color: #ccc;
+    background-color: white;
 }
 
 .blog-card {
@@ -474,6 +514,7 @@ li.topic:hover {
 
 .profile:hover {
     border: 1px solid gold;
+    border-radius: 50%;
     box-shadow: 0 0 10px gold;
 }
 
@@ -534,21 +575,21 @@ li.topic:hover {
 /* CONTACT PAGE */
 
 .contact-page-container {
-    height: 550px;
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0% 1%;
 }
 
 #contact-left {
     order: 1;
-    width: 80%;
-    padding-top: 3%;
+    margin: 3%;
 }
 
 #contact-right {
     order: 2;
-    flex: 1;
+    width: 20%;
     background-color: #114266;
     margin-left: 1%;
     color: white;
@@ -571,7 +612,7 @@ li.topic:hover {
 
 #contact-email-label {
     order: 2;
-    padding: 8px 8px 8px 8px;
+    padding: 4px 8px 4px 8px;
 }
 
 #contact-email-input {
@@ -582,7 +623,7 @@ li.topic:hover {
 
 #contact-message-label {
     order: 4;
-    padding: 8px 8px 0px 8px;
+    padding: 4px 8px 4px 8px;
 }
 
 #contact-message-input {
@@ -591,6 +632,10 @@ li.topic:hover {
     height: 150px;
     border-radius: 10px;
     background-color: #E5E5E5;
+}
+
+#contact-page-send {
+    margin-top: 10px;
 }
 
 /* FOOTER CSS */
@@ -679,7 +724,17 @@ li.topic:hover {
     #myFooter .row {
         margin: 0;
     }
+
+    .contact-and-newsletter {
+        flex-direction: column;
+    }
 }
+
+@media only screen and (max-width: 200px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 
 
 /* Flexbox */
