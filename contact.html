@@ -23,51 +23,34 @@
     <title>10 Kids Later | Welcome</title>
   </head>
 
-  <!-- Header -->
-    <header>
-        <div class="header">
-
-           <!--NAVBAR-->
-          <nav class="navbar navbar-expand-lg bg-white" id="home-nav-container">
-            <div>
-              
-            </div>  
-            <a class="navbar-brand" href="index.html"><img src="/Images/Small Logo.svg" alt="?"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="answerswithamy.html">Answers with Amy<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Products
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Product 1</a>
-                      <a class="dropdown-item" href="#">Product 2</a>
-                      <a class="dropdown-item" href="#">Product 3</a>
-                    </div>
-                  </li> -->
-                </ul>
-              </div>
-            </nav>
-        </div>
-    </header>
+<!-- Header -->
+<header>
+    <a href="index.html"><img src="/Images/Small Logo.svg" alt="?" class="nav-logo"></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <!--NAVBAR-->
+    <nav>  
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="answerswithamy.html">Answers with Amy<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="about.html">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="">Contact<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+  </header>
 
 <!-- Main Container-->
 
@@ -76,15 +59,15 @@
   <div id="contact-left">
     <h1>Contact Me</h1>
     <hr id="contact-page-hr">
-    <h3>I am here to SERVE. If you have any questions, feel free to send them my way. <span><h6 class="sub-heading">(I usually reply within 48 hours)</h6></span></h3>
-    
-    
+    <h4>I am here to SERVE. If you have any questions, feel free to send them my way.</h4>
+
     <h6 id="contact-name-label"><span><input type="text" placeholder=" Name" value="" id="contact-name-input"></span></h6>
     
     <h6 id="contact-email-label"><span><input type="email" placeholder=" Email" id="contact-email-input"></span></h6>
 
     <h6 id="contact-message-label"></h6>
     <textarea name="" id="contact-message-input" placeholder=" What's on your mind?"></textarea>
+    <h6 class="sub-heading">(I usually reply within 48 hours)</h6>
     <button type="submit" class="send-button" id="contact-page-send">Send</button>
 
   </div>

@@ -43,51 +43,34 @@
 
   </head>
 
-  <!-- Header -->
-    <header>
-        <div class="header">
-
-           <!--NAVBAR-->
-          <nav class="navbar navbar-expand-lg bg-white" id="home-nav-container">
-            <div>
-              
-            </div>  
-            <a class="navbar-brand" href="index.html"><img src="/Images/Small Logo.svg" alt="?"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="answerswithamy.html">Answers with Amy<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item-active">
-                    <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Products
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Product 1</a>
-                      <a class="dropdown-item" href="#">Product 2</a>
-                      <a class="dropdown-item" href="#">Product 3</a>
-                    </div>
-                  </li> -->
-                </ul>
-              </div>
-            </nav>
-        </div>
-    </header>
+<!-- Header -->
+  <header>
+    <a href="index.html"><img src="/Images/Small Logo.svg" alt="?" class="nav-logo"></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <!--NAVBAR-->
+    <nav>  
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="answerswithamy.html">Answers with Amy<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="about.html">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-li">
+            <a href="contact.html">Contact<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+  </header>
 
 <!-- Youtube Embedding-->
 <div class="intro-video">
@@ -96,14 +79,13 @@
 
  <!-- JUMBOTRON -->
  <div class="jumbotron" id="home-greeting">
-    <div id="home-greeting-img">
-      <img src="/Images/Amy Profile.png" alt="?">
+    <div id="home-greeting-img-container">
+      <img src="/Images/Amy Profile.png" alt="?" id="home-greeting-img">
     </div>
     <div class="container" id="home-greeting-text">
         <h1>Welcome!</h1>
         <hr>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt obcaecati nihil deserunt tenetur dolores alias veniam sint at laborum fuga dolore, quas nam itaque adipisci, minus ratione incidunt facilis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla iure reprehenderit asperiores voluptas harum qui voluptatibus cumque, ducimus veritatis dolores quasi ex rerum dolor, beatae aut a fuga culpa dolorem?</p><br><br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab perspiciatis eaque ducimus reprehenderit dolor quisquam corrupti minima doloribus illum suscipit, quibusdam autem natus voluptas adipisci quam ipsam placeat pariatur est.</p>
+        <p>I’m Amy Sellers, mother of 10 healthy kids and grandmother to 15 lovely littles.  I love hanging out with the family, scuba diving (in warm water!), and traveling with my wonderful husband.  I’ve always been a “natural” mama, but since I discovered doTERRA essential oils, my life is so much better! Better energy, better sleep, better relationships,…just better!</p>
     </div>
 </div>
 
@@ -114,7 +96,7 @@
       <img src="/Images/home-essentials-kit.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Home Essentials Kits</h5>
-        <p class="card-text">The Best Value Starter.  I usually recommend this kit as a base if your budget allows - there’s just so much value with the 15 ml bottles (275 drops!).  You get 3 times the oils and the Petal diffuser. $86 in savings over wholesale pricing.  $275 gets you started.</p>
+        <p class="card-text">The Best Value Starter.  I recommend this kit if your budget allows - there’s just so much value with the 15 ml bottles (275 drops!).  You get 3 times the oils and the Petal diffuser.</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">$275</small>
@@ -126,7 +108,7 @@
       <img src="/Images/Aroma-touch-diffused-kit.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Aromatouch Diffused Kit</h5>
-        <p class="card-text">5ml bottles of 8 of the most popular oils (everything you need to share the Aromatouch Technique at home) and the popular Petal Diffuser, so you can use oils topically, aromatically, and internally from the start. $150 makes this an attractive starter kit.</p>
+        <p class="card-text">5 ml bottles of the 8 most popular oils and the Petal Diffuser, so you can use oils topically, aromatically, and internally from the start.</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">$150</small>
@@ -140,7 +122,7 @@
         <img src="/Images/natural-solutions-kit.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Natural Solutions Kit</h5>
-          <p class="card-text">the Medicine Cabinet Makeover kit. This kit will support you at every step of building your health.  From the best nutritional supplements, to Deep Blue Rub, Oils for Physical and emotional support, and our famous OnGuard products, you will experience natural living at all levels.  It’s well worth the investment at $550 and 100 product points to keep building your collection.  If you are serious about changing your health this is the kit for you.</p>
+          <p class="card-text">This kit will support you at every step of building your health.  From the best nutritional supplements, to Deep Blue Rub, Oils for Physical and emotional support, and our famous OnGuard products, you will experience natural living at all levels.  If you are serious about changing your health this is the kit for you.</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">$550</small>
@@ -152,7 +134,7 @@
         <img src="/Images/diamond-kit.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Diamond Kit</h5>
-          <p class="card-text">Not for everybody, but it is for 3 types of customers: if you want to be able to mix up any and every recipe in the book, or you want to build a doTERRA business, or you are a very strategic planner, getting it all at once may be right for you.  You’ll have one of every doTERRA product with saving over $866, get 400 product points to spend on future purchases, 25% back on every purchase, and can just budget for your continuing supplements and you are on your way.  Lifestyle Transformation!</p>
+          <p class="card-text">This is for 3 types of people: if you want to be able to mix up any and every recipe in the book, you want to build a doTERRA business, or you are a very strategic planner, getting it all at once may be right for you. This will be a lifestyle transformation!</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">$2,750</small>
@@ -164,70 +146,31 @@
 <!-- EXPLORE ABOUT -->
 
 <div id="invite-to-about">
-    <div id="about-invitation">
-      <h4>
-        If you are looking for a good reason to start using essential oils, don't worry... 
-      </h4>
-          <br> <h1>I have 10!</h1> <br>
-      <h4>
-        See how my kids use Doterra's products and why they love them.
-      </h4>
-      <a href="about.html"><button class="button" id="explore-button">Explore</button></a> <!-- add link to the about page -->
-    </div>
-</div>
-
-  <!-- FAMILY PICTURE -->
-  <div>
-      <img src="/Images/10 Kids Picture.png" alt="?" class="ten-kids-picture">
+  <div id="about-invitation">
+    <h4>
+        If you’re looking for a good reason to start using essential oils, don’t worry...
+    </h4>
+    <h4>
+        I have <b>10</b>!
+    </h4>
+    <a href="about.html"><button class="button" id="explore-button">Explore their favorite products</button></a> <!-- add link to the about page -->
   </div>
-  
+    
+  <!-- FAMILY PICTURE -->
+  <div class="ten-kids-picture">
+    <img src="/Images/10 Kids Picture.png" alt="?">
+  </div>
+</div>
 
   <!-- CONTACT FORM-->
 
-<div class="contact-and-newsletter">
-  <!-- LEFT SIDE -->
-  <div class="left-item" id="contact-form">
-    
-    <div id="">
-      <h2>
-        Questions?
-      </h2>
-      <hr class="title-underline">
-      <p>
-        Check out <a href="answerswithamy.html" class="white-text-link">my blog</a>! I've written articles on dozens of topics. If you didn't find your answer, send me an email and I'll get back to your within 2 business days.
-      </p>
-    </div>
-    <form action="submit" method="Post" action="javascript:sendMail('dylan.sellers@hotmail.com','Home-page-Email');" enctype=”multipart/form-data” id="home-contact-form">
-      <div class="contact-form-left">
-        <input type="text" class="input-field" name="Name" placeholder=" Name" id="home-contact-form-name-input">
-        <input type="text" class="input-field" name="Email" placeholder=" Email" id="home-contact-form-email-input">
-        <input type="submit" value="Send" class="send-button" id="home-contact-form-send">
-      </div>
-      <div class="contact-form-right">
-        <textarea placeholder=" What's on your mind?" class="input-field" id="home-email-message-input"></textarea>
-      </div>
-    </form>
-  </div>
+<div class="newsletter-form-container">
+  <h3>For future health tips, sign up for my monthly newsletter!</h3>
 
-  <!-- CENTER DIVIDER -->
-  <div id="separator"></div>
-
-    <!-- RIGHT SIDE -->
-  <div class="right-item" id="home-newsletter-form">
-
-    <h2>
-      Want Updates?
-    </h2>
-    <hr>
-
-    <p>Sign up for my newsletter! I promised not to burden you with spammy email threads. You can expect <u>1 to 2 emails per month </u> with relevant information on oils to keep you informed.</p>
-
-    <form action="submit" id="email newsletter form">
-      <input type="email" class="input-field" name="Email" placeholder=" Email" id="newsletter-input">
-      <input type="submit" class="submit-button">
-    </form>
-
-  </div>
+  <form action="submit" id="email-newsletter-form">
+    <input type="email" class="input-field" name="Email" placeholder=" Email" id="newsletter-input">
+    <input type="submit" class="submit-button">
+  </form>
 </div>
 
   <body>
