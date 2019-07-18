@@ -1,19 +1,28 @@
 {
-  "name": "ecommerce_website",
+  "name": "Amy-Sellers-Oil-Business",
   "version": "1.0.0",
-  "description": "My First E-commerce website",
-  "main": "Main.js",
+  "description": "A website for Amy Sellers' oil business with Doterra, the main purpose is to use digital marketing and analytics to increase revenue.",
+  "main": "Index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Index",
+    "dev": "nodemon Index"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dylanps/ecommerce_website.git"
+    "url": "git+https://github.com/dylanps/Amy-Sellers-Oil-Business.git"
   },
+  "keywords": [],
   "author": "Dylan Sellers",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dylanps/ecommerce_website/issues"
+    "url": "https://github.com/dylanps/Amy-Sellers-Oil-Business/issues"
   },
-  "homepage": "https://github.com/dylanps/ecommerce_website#readme"
+  "homepage": "https://github.com/dylanps/Amy-Sellers-Oil-Business#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "dotenv": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }

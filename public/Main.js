@@ -1,4 +1,8 @@
+import { getMaxListeners } from "cluster";
+
 //code that changes text based on clicking a profile image.
+
+console.log('main.js loaded');
 
 const Amy = document.getElementById('amy-profile-about');
 const Glen = document.getElementById('glen-profile');
@@ -73,58 +77,35 @@ Tanner.addEventListener("mouseenter", function() {
     document.getElementById('about-info-text').innerHTML = 'Insert Tanner-bio here';
 });
 
-// example code
+// CONTACT PAGE
 
-// const navlink = document.getElementsByClassName('nav-link');
+sendButton = document.getElementById('contact-page-send');
 
-// navlink[0].addEventListener('hovermouseover', (e) => {
+sendButton.addEventListener("click", sendContactFormEmail);
 
-//     console.log(navlink[0]);
-//     navlink[0].setAttribute
+function sendContactFormEmail() {
+    console.log('Send email function triggered');
 
-// });
+    var name = document.getElementById('contact-name-input').val();
+    var senderEmail = document.getElementById('contact-email-input').val();
+    var body = document.getElementById('contact-message-input').val();
+    var sendTo = 'sellersdylan92@gmail.com';
 
-//function that dynamically adds the product to the users cart.
+    name = 'Test';
+    senderEmail = 'sellersdylan92@gmail.com';
+    body = 'This is a test message!';
 
-//all cart 
-// class CartManager {
-//     constructor() {
-        
-//     }
+    var subjectLine = `10 Kids Later | Contact Page | ${name}`;
 
-//     // cart = [];
+    const msg = {
+        to: sendTo,
+        from: senderEmail,
+        subject: subjectLine,
+        text: body,
+        // html: "",
+    };
 
-//     addtoCart() {
-//         // this.cart
-//     }
-//     removefromCart() {
+    sgMail.send(msg);
 
-//     }
-//     emptyCart() {
-//         //while cart is not empty, remove items (or delete cart?)
-//     }
-// }
-
-// console.log(CartManager);
-
-// class Product {
-//     constructor(id, label, price) {
-        
-//         //input parameters
-//         this.id = id;
-//         this.label = label;
-//         this.price = price;
-
-//         //other parameters
-//         this.quantity = 0;
-//         this.favorites = 0;
-//         this.reviews = 0;
-//         this.comments = [];
-//     }
-    
-// }
-
-// const myBelt = new Product(1, 'belt', 10.00);
-
-// console.log(myBelt);
-
+    console.log('Email Sent!');
+}
