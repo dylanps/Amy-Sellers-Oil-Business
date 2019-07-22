@@ -28,18 +28,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-// app.get('/sendEmail', (req, res) => {  
-//     // res.render('contact');
-//     res.send('Email was sent.');
-// })
-
-//git test
-
 // main back-end code starts here
 
 sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
 
-app.post('/sendEmail', async (req, res) => {
+app.post('/sendEmail', (req, res) => {
     
     var name = req.body.name;
     var senderEmail = req.body.email;
@@ -71,7 +64,7 @@ app.post('/sendEmail', async (req, res) => {
         html: HTMLmessage,
     };
 
-    sgMail.send(msg);
+    // sgMail.send(msg);
 
     console.log('Email Sent!');
 });
