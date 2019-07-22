@@ -34,35 +34,35 @@ sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
 
 app.post('/sendEmail', (req, res) => {
     
-    var name = req.body.name;
-    var senderEmail = req.body.email;
-    var HTMLmessage = `
-    <p>Amy,</p>
+    // var name = req.body.name;
+    // var senderEmail = req.body.email;
+    // var HTMLmessage = `
+    // <p>Amy,</p>
 
-    <p> ${req.body.message}</p>
+    // <p> ${req.body.message}</p>
 
-    <p> ${req.body.name}</p>
-    <p> ${req.body.email}</p>
-    `;
-    var message = `
-    Amy,
+    // <p> ${req.body.name}</p>
+    // <p> ${req.body.email}</p>
+    // `;
+    // var message = `
+    // Amy,
 
-    ${req.body.message}
+    // ${req.body.message}
 
-    ${req.body.name}
-    ${req.body.email}
-    `;
+    // ${req.body.name}
+    // ${req.body.email}
+    // `;
     
-    var sendTo = 'sellersdylan92@gmail.com';
-    var subjectLine = `10 Kids Later | Contact Page | ${name}`;
+    // var sendTo = 'sellersdylan92@gmail.com';
+    // var subjectLine = `10 Kids Later | Contact Page | ${name}`;
 
-    const msg = {
-        to: sendTo,
-        from: senderEmail,
-        subject: subjectLine,
-        text: message,
-        html: HTMLmessage,
-    };
+    // const msg = {
+    //     to: sendTo,
+    //     from: senderEmail,
+    //     subject: subjectLine,
+    //     text: message,
+    //     html: HTMLmessage,
+    // };
 
     // sgMail.send(msg);
 
