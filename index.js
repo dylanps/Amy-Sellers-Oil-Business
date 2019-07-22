@@ -39,7 +39,7 @@ app.use(bodyParser.json());
 
 sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
 
-app.post('/sendEmail', (req, res) => {
+app.post('/sendEmail', async (req, res) => {
     
     var name = req.body.name;
     var senderEmail = req.body.email;

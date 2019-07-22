@@ -2,7 +2,7 @@
   "name": "Amy-Sellers-Oil-Business",
   "version": "1.0.0",
   "description": "A website for Amy Sellers' oil business with Doterra, the main purpose is to use digital marketing and analytics to increase revenue.",
-  "main": "Index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node Index",
     "dev": "nodemon Index"
