@@ -81,31 +81,9 @@ Tanner.addEventListener("mouseenter", function() {
 
 sendButton = document.getElementById('contact-page-send');
 
-sendButton.addEventListener("click", sendContactFormEmail);
+sendButton.addEventListener("click", function(){
 
-function sendContactFormEmail() {
-    console.log('Send email function triggered');
-
-    var name = document.getElementById('contact-name-input').val();
-    var senderEmail = document.getElementById('contact-email-input').val();
-    var body = document.getElementById('contact-message-input').val();
-    var sendTo = 'sellersdylan92@gmail.com';
-
-    name = 'Test';
-    senderEmail = 'sellersdylan92@gmail.com';
-    body = 'This is a test message!';
-
-    var subjectLine = `10 Kids Later | Contact Page | ${name}`;
-
-    const msg = {
-        to: sendTo,
-        from: senderEmail,
-        subject: subjectLine,
-        text: body,
-        // html: "",
-    };
-
-    sgMail.send(msg);
-
-    console.log('Email Sent!');
-}
+    document.getElementById('contact-name-input').val() = '';
+    document.getElementById('contact-email-input').val() = '';
+    document.getElementById('contact-message-input').val() = '';
+});

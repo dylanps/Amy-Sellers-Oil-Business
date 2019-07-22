@@ -1,24 +1,76 @@
 console.log('loaded index.js');
-console.log('got here!');
 
 require('dotenv').config();
 
+//initialize express app
+const express = require('express');
+const exphbs = require('express-handlebars');
+const bodyParser = require('body-parser');
+const sgMail = require('@sendgrid/mail');
+const path = require('path');
+const app = express();
+var router = express.Router();
+
+// set port
 const PORT = process.env.PORT || 5000;
 
-// console.log(process.env);
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
-const sgMail = require("@sendgrid/mail");
+// view engine setup
+app.engine('handlebars', exphbs);
+app.set('view engine', 'handlebars');
+app.set('views', path.join(__dirname, 'views'));
+
+// Set a static folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// body parser middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+app.get('/sendEmail', (req, res) => {  
+    res.render('contact');
+    // res.send('hello world!');
+})
+
+// main back-end code starts here
+
 sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
 
-const msg = {
-    to: 'sellersdylan92@gmail.com',
-    from: 'sellersdylan92@gmail.com',
-    subject: 'SendGrid Test Email',
-    text: 'here is my text...',
-    // html: "",
-};
+app.post('/sendEmail', (req, res) => {
+    
+    var name = req.body.name;
+    var senderEmail = req.body.email;
+    var HTMLmessage = `
+    <p>Amy,</p>
 
-sgMail.send(msg);
+    <p> ${req.body.message}</p>
 
-console.log('Email Sent!');
+    <p> ${req.body.name}</p>
+    <p> ${req.body.email}</p>
+    `;
+    var message = `
+    Amy,
+
+    ${req.body.message}
+
+    ${req.body.name}
+    ${req.body.email}
+    `;
+    
+    var sendTo = 'sellersdylan92@gmail.com';
+    var subjectLine = `10 Kids Later | Contact Page | ${name}`;
+
+    const msg = {
+        to: sendTo,
+        from: senderEmail,
+        subject: subjectLine,
+        text: message,
+        html: HTMLmessage,
+    };
+
+    sgMail.send(msg);
+
+    console.log('Email Sent!');
+});
 
