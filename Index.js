@@ -28,10 +28,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.get('/sendEmail', (req, res) => {  
-    res.render('contact');
-    // res.send('hello world!');
-})
+// app.get('/sendEmail', (req, res) => {  
+//     // res.render('contact');
+//     res.send('Email was sent.');
+// })
 
 // main back-end code starts here
 
