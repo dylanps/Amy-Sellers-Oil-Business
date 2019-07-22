@@ -66,6 +66,6 @@ app.post('/sendEmail', (req, res) => {
 
     // sgMail.send(msg);
 
-    console.log('Email Sent!');
+    console.log('Email Sent index.js!');
 });
 
