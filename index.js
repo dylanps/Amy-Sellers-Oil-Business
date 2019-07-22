@@ -53,7 +53,7 @@ app.post('/sendEmail', (req, res) => {
     ${req.body.email}
     `;
     
-    var sendTo = 'sellersdylan92@gmail.com';
+    var sendTo = 'amy@10kidslater.com';
     var subjectLine = `10 Kids Later | Contact Page | ${name}`;
 
     const msg = {
