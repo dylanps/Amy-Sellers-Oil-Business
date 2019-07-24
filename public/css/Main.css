@@ -48,40 +48,68 @@ hr {
     order: 1;
 }
 
+input {
+    border: 0;
+}
+
+/* BUTTONS */
+
+button {
+    border: 0;
+}
+
 .send-button {
     /* background-color: rgba(10, 153, 8, 0.788); */
     background-color: rgb(4, 184, 100);
     color: white;
-    border: 0;
     border-radius: 14px;
     width: 6em;
+    height: 30px;
+    line-height: 50%;
     float: right;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .send-button:hover {
     background-color: rgb(2, 139, 75);
     /* background-color: rgb(4, 184, 100); */
     color: white;
+    transition: background-color 0.5s;
 }
 
 .submit-button {
     width: 100px;
     height: 30px;
-    border: 0;
     border-radius: 20px;
     background-color: white;
     color: rgb(4, 184, 100);
     font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
 }
 
 .submit-button:hover {
     background-color: rgb(4, 184, 100);
     color: white;
+    transition: background-color 0.5s;
 }
 
-.input-field {
-    border: 0;
+.more-details-button {
+    background-color: white;
+    color: #0077B9;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 45px;
+    border-radius: 16px;
+    width: 300px;
+}
+
+.more-details-button:hover {
+    background-color: gold;
+    color: white;
+    transition: background-color 0.5s;
 }
 
 /* NAVBAR */
@@ -201,7 +229,7 @@ nav a:link {
 
 .card-link .card:hover {
     box-shadow: -5px 5px 10px 5px rgba(177, 177, 177, 0.616);
-
+    transition: box-shadow 0.2s;
 }
 
 .card-link {
@@ -290,11 +318,13 @@ nav a:link {
 
 #invite-to-about {
     background-color: #0077b9;
-    margin: 2% 0% 0% 0%;
+    margin: 1% 0% 0% 0%;
     color: white;
     text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #about-invitation {
@@ -302,6 +332,9 @@ nav a:link {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-content: center;
+    height: 250px;
+    width: 50%;
     padding: 1%;
 }
 
@@ -313,18 +346,26 @@ nav a:link {
     border: 0;
     color: #0077b9;
     font-size: 18px;
+    min-height: 40px;
+    height: auto;
     order: 1;
 }
 
 #explore-button:hover {
-
     background-color: gold;
     color: white;
+    transition: background-color 0.5s;
+}
+
+.ten-kids-picture-container {
+    order: 2;
+    height: 250px;
+    width: auto;
 }
 
 .ten-kids-picture {
-    order: 2;
-    height: auto;
+    height: inherit;
+    width: inherit;
 }
 
 /* NEWSLETTER FORM */
@@ -354,27 +395,84 @@ nav a:link {
 /* ESSENTIAL OILS */
 
 .ee-page-container {
-    height: 550px;
-    display: flex;
-    justify-content: space-between;
     margin: 60px 0px 0px 0px;
     padding: 0% 1%;
 }
 
-#ee-left {
-    order: 1;
-    width: 80%;
-    padding-top: 3%;
-}
-
-#ee-right {
-    order: 2;
-    flex: 1;
-    background-color: #114266;
-    margin-left: 1%;
+.kit-row {
+    height: 321px;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 5px 0px;
 }
 
+.kit-row-left-odd {
+    background-color: #11222dc5;
+    width: 5%;
+}
+
+.kit-row-center-odd {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kit-row-right-odd {
+    background-color: #0077B9;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kit-row-left-even {
+    background-color: #11222dc5;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kit-row-center-even {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kit-row-right-even {
+    background-color: #0077B9;
+    width: 5%;
+}
+
+.odd-button {
+
+}
+
+.even-button {
+
+}
+
+.kit-name {
+    color: #0077B9;
+    font: 36px bold;
+}
+
+.kit-description {
+    font-size: 24px;
+    padding: 2%;
+    text-align: center;
+}
+
+.ee-kit-image {
+    height: 273px;
+    width: auto;
+}
 
 /* ANSWERS WITH AMY */
 
@@ -419,6 +517,7 @@ li.topic {
 li.topic:hover {
     color: white;
     background-color: #114266;
+    transition: background-color 0.8s;
 }
 
 .blog-deck {
@@ -560,11 +659,11 @@ li.topic:hover {
 }
 
 .profile:hover {
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
     border-radius: 50%;
     box-shadow: 0 0 10px gold;
+    transition: box-shadow .5s;
 }
-
 
 #glen-profile {
     margin-right: 1%;
@@ -798,21 +897,32 @@ li.topic:hover {
         padding: 0;
     }
 
-    #invite-to-about {
-        flex-direction: column;
-    }
-
     .about-page-container {
         flex-direction: column;
     }
 
 }
 
-@media only screen and (max-width: 200px) {
-    body {
-      background-color: lightblue;
+/* MIDSIZE */
+@media screen and (max-width: 1360px) {
+
+    #invite-to-about {
+        flex-direction: column;
+        justify-content: center;
     }
-  }
+
+    .ten-kids-picture-container {
+        height: auto;
+        width: 100vw;
+    }
+    
+    .ten-kids-picture {
+        height: inherit;
+        width: inherit;
+    }
+}
+
+  
 
 /* WHEN FULL SCREEN */
 @media screen and (min-width: 800px) {
