@@ -939,6 +939,41 @@ li.topic:hover {
         flex-direction: column;
     }
 
+    .kit-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .kit-row-center-even {
+        order: 1;
+    }
+
+    .kit-row-left-even {
+        order: 2;
+        width: 100vw;
+    }
+
+    .kit-row-right-even {
+        order: 3;
+        width: 100vw;
+        height: 50px;
+    }
+
+    .kit-row-center-odd {
+        order: 2;
+    }
+
+    .kit-row-left-odd {
+        order: 1;
+        width: 100vw;
+        height: 50px;
+    }
+
+    .kit-row-right-odd {
+        order: 3;
+        width: 100vw;
+    }
+
 }
 
 /* MIDSIZE */
