@@ -122,83 +122,84 @@ AmyMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = AmyBio;
     document.getElementById('about-pic').src = '/Images/Amy Profile about.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 GlenMobile.addEventListener("click", function() {
     console.log('clicked on Glen');
     document.getElementById('about-info-text').innerHTML = GlenBio;
     document.getElementById('about-pic').src = '/Images/Glen Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 IvyMobile.addEventListener("click", function() {
     console.log('clicked on Ivy');
     document.getElementById('about-info-text').innerHTML = IvyBio;
     document.getElementById('about-pic').src = '/Images/Ivy Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 ChelseaMobile.addEventListener("click", function() {
     console.log('clicked on Chelsea');
     document.getElementById('about-info-text').innerHTML = ChelseaBio;
     document.getElementById('about-pic').src = '/Images/Chelsea Profile.png';
-    window.scrollTo(0, 1200);
+    wdocument.getElementById('about-person').scrollIntoView();
 });
 
 TimMobile.addEventListener("click", function() {
     console.log('clicked on Tim');
     document.getElementById('about-info-text').innerHTML = TimBio;
     document.getElementById('about-pic').src = '/Images/Tim Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 MeganMobile.addEventListener("click", function() {
     console.log('clicked on Megan');
     document.getElementById('about-info-text').innerHTML = MeganBio;
     document.getElementById('about-pic').src = '/Images/Megan Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 ChadMobile.addEventListener("click", function() {
     console.log('clicked on Chad');
     document.getElementById('about-info-text').innerHTML = ChadBio;
     document.getElementById('about-pic').src = '/Images/Chad Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 MeriMobile.addEventListener("click", function() {
     console.log('clicked on Meri');
     document.getElementById('about-info-text').innerHTML = MeriBio;
     document.getElementById('about-pic').src = '/Images/Meri Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 DylanMobile.addEventListener("click", function() {
     console.log('clicked on Dylan');
     document.getElementById('about-info-text').innerHTML = DylanBio;
     document.getElementById('about-pic').src = '/Images/Dylan Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 NatalieMobile.addEventListener("click", function() {
     console.log('clicked on Natalie');
     document.getElementById('about-info-text').innerHTML = NatalieBio;
     document.getElementById('about-pic').src = '/Images/Natalie Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 KatyMobile.addEventListener("click", function() {
     console.log('clicked on Katy');
     document.getElementById('about-info-text').innerHTML = KatyBio;
     document.getElementById('about-pic').src = '/Images/Katy Profile.png';
-    window.scrollTo(0, 1200);    
+    document.getElementById('about-person').scrollIntoView();  
 });
 
 TannerMobile.addEventListener("click", function() {
     console.log('clicked on Tanner');
     document.getElementById('about-info-text').innerHTML = TannerBio;
     document.getElementById('about-pic').src = '/Images/Tanner Profile.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 
