@@ -670,7 +670,7 @@ li.topic:hover {
     flex-direction: row;
 }
 
-#about-amy {
+#about-person {
     width: 30%;
     color: white;
     background-color: #0077B9;
@@ -1086,7 +1086,7 @@ li.topic:hover {
         flex-direction: column;
     }
     
-    #about-amy {
+    #about-person {
         width: 100%;
     }
 

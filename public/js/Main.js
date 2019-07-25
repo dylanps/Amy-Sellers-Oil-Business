@@ -30,7 +30,7 @@ const NatalieMobile = document.getElementById('natalie-profile-mobile');
 const KatyMobile = document.getElementById('katy-profile-mobile');
 const TannerMobile = document.getElementById('tanner-profile-mobile');
 
-AmyBio = '<b>Amy</b> is is a recovering mother of 10 amazing kids and blessed with 15 grand-children and counting, Amy loves to learn and almost always has a book in hand.  She enjoys scuba-diving in warm water, and exploring new places to learn about the people and plants that live there!  Her favorite oil is the Immortelle blend as she strives to age gracefully, but she loves to wake up with <a href=\'http://doterra.com/US/en/p/wild-orange-oil?OwnerID=260207\' target=\'_blank\'>Wild Orange</a> and <a href=\http://doterra.com/US/en/p/peppermint-oil?OwnerID=260207\' target=\'_blank\'>Peppermint</a>, and wonders what she’s drinking without <a href=\http://doterra.com/US/en/p/slim-and-sassy-oil?OwnerID=260207\' target=\'_blank\'>Slim & Sassy</a> in her water bottle.';
+AmyBio = '<b>Amy</b> is a recovering mother of 10 amazing kids and blessed with 15 grand-children and counting, Amy loves to learn and almost always has a book in hand.  She enjoys scuba-diving in warm water, and exploring new places to learn about the people and plants that live there!  Her favorite oil is the Immortelle blend as she strives to age gracefully, but she loves to wake up with <a href=\'http://doterra.com/US/en/p/wild-orange-oil?OwnerID=260207\' target=\'_blank\'>Wild Orange</a> and <a href=\http://doterra.com/US/en/p/peppermint-oil?OwnerID=260207\' target=\'_blank\'>Peppermint</a>, and wonders what she’s drinking without <a href=\http://doterra.com/US/en/p/slim-and-sassy-oil?OwnerID=260207\' target=\'_blank\'>Slim & Sassy</a> in her water bottle.';
 GlenBio = '<b>Glen</b> is an amazing husband and hardworking dad, his favorite title is “Papa”.  He loves entertaining the littles, teaching them to collect the eggs, ride the quads, and push him into the nearest body of water.  He loves the Serenity duo - <a href=\'http://doterra.com/US/en/p/doterra-serenity-restful-complex-softgels?OwnerID=260207\' target=\'_blank\'>Serenity softgels</a> and <a href=\'http://doterra.com/US/en/p/doterra-serenity-oil?OwnerID=260207\' target=\'_blank\'>Oil</a> at bedtime to let him drift off to dreamland so he doesn’t miss his morning run. <a href=\'https://www.doterra.com/US/en/p/copaiba-softgels?OwnerID=260207\' target=\'_blank\'>Copaiba</a> is also this “farmer’s” friend.';
 IvyBio = '';
 TimBio = '';
@@ -121,7 +121,7 @@ AmyMobile.addEventListener("click", function() {
     console.log('clicked on Amy');
     document.getElementById('about-info-text').innerHTML = AmyBio;
     document.getElementById('about-pic').src = '/Images/Amy Profile about.png';
-    window.scrollTo(0, 1200);
+    document.getElementById('about-person').scrollIntoView();
 });
 
 GlenMobile.addEventListener("click", function() {
