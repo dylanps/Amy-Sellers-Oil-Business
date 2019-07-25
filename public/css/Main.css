@@ -239,7 +239,6 @@ nav a:link {
     padding: 0% 10% 2% 10%;
     position: center;
     width: 100%;
-    /* background-image: radial-gradient(white 70%, rgb(194, 194, 194)); */
 }
 
 .card-link .card:hover {
@@ -254,6 +253,11 @@ nav a:link {
 
 .card-link:hover {
     color: #114266;
+}
+
+.card-img-top {
+    width: inherit;
+    height: auto;
 }
 
 .kit-price {
@@ -561,6 +565,102 @@ li.topic:hover {
     border: #0077B9 10px solid;
 }
 
+.blog-hr-small {
+    border: #114266 5px solid;
+    width: 90%;
+}
+
+/* BLOG ARTICLES */
+
+.article-container {
+    margin-top: 120px;
+    padding: 0% 10%;
+}
+
+.article-title {
+    color: black;
+}
+
+.article-heading {
+    color: #0077B9;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.article-text {
+    color: black;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.article-hightlight {
+    color: #0077B9;
+    font-style: italic;
+    font-size: 24px;
+    background-color: rgb(214, 212, 212);
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-picture-text-combo {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0%;
+}
+
+.share-bar {
+    background-color: #0077B9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 80px;
+    align-items: center;
+}
+
+.share-invite {
+    color: white;
+    font-size: 24px;
+}
+
+.share-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fb-share {
+    order: 1;
+    border-radius: 50%;
+}
+
+.li-share {
+    order: 2;
+    margin: 0% 5%;
+    border-radius: 50%;
+}
+
+.pin-share {
+    order: 3;
+    border-radius: 50%;
+}
+
+.fb-share:hover {
+    box-shadow: 0 0 10px gold;
+    transition: box-shadow .5s;
+}
+
+.li-share:hover {
+    box-shadow: 0 0 10px gold;
+    transition: box-shadow .5s;
+}
+
+.pin-share:hover {
+    box-shadow: 0 0 10px gold;
+    transition: box-shadow .5s;
+}
 
 /* ABOUT PAGE */
 
@@ -578,7 +678,7 @@ li.topic:hover {
     text-align: center;
 }
 
-#about-amy-pic {
+#about-pic {
     margin-top: 1em;
     width: 150px;
     height: 150px;
@@ -666,12 +766,22 @@ li.topic:hover {
 }
 
 #about-info-text {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px;
     line-height: 1.75;
     display: inline-block;
     vertical-align: middle;
+}
+
+#about-info-text a:link {
+    text-decoration: none;
+    color: gold;
+}
+
+#about-info-text a:visited {
+    text-decoration: none;
+    color: gold;
 }
 
 .profile {
@@ -739,6 +849,43 @@ li.topic:hover {
 #chad-profile {
     margin-top: -9%;
 }
+
+/* ABOUT FAMILY MOBILE */
+
+#about-family-mobile {
+    display: none;
+    background-color: white;
+    margin-top: 60px;
+    padding-top: 1em;
+}
+
+.mobile-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.about-family-title {
+    text-align: center;
+    padding: 3% 10%;
+}
+
+#about-family-col-1 {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    justify-content: center;
+}
+
+#about-family-col-2 {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    justify-content: center;
+}
+
+
+
 
 /* CONTACT PAGE */
 
@@ -926,10 +1073,81 @@ li.topic:hover {
 
 /* WHEN MOBILE */
 @media screen and (max-width: 800px) {
+
     #myFooter {
         text-align: center;
     }
+
     #myFooter .row {
+        margin: 0;
+    }
+
+    .about-page-container {
+        flex-direction: column;
+    }
+    
+    #about-amy {
+        width: 100%;
+    }
+
+    #about-family {
+        display: none;
+    }
+
+    #about-family-mobile {
+        display: block;
+    }
+
+    .mobile-profiles {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    #glen-profile {
+        margin: 0;
+    }
+    
+    #amy-profile-about {
+    
+    }
+    
+    #tanner-profile {
+        margin: 0;
+    }
+    
+    #ivy-profile {
+        margin: 0;
+    }
+    
+    #katy-profile {
+        margin: 0;
+    }
+    
+    #chelsea-profile {
+        margin: 0;
+    }
+    
+    #natalie-profile {
+        margin: 0;
+    }
+    
+    #tim-profile {
+        margin: 0;
+    }
+    
+    #dylan-profile {
+        margin: 0;
+    }
+    
+    #megan-profile {
+        margin: 0;
+    }
+    
+    #meri-profile {
+        margin: 0;
+    }
+    
+    #chad-profile {
         margin: 0;
     }
 
@@ -945,20 +1163,8 @@ li.topic:hover {
         flex-direction: column;
     }
 
-    #about-family {
-        /* text-align: center; */
-    }
-
-    #about-amy {
-        width: 100%;
-    }
-
     #home-greeting-text {
         padding: 0;
-    }
-
-    .about-page-container {
-        flex-direction: column;
     }
 
     #about-invitation {
@@ -970,6 +1176,14 @@ li.topic:hover {
         height: 250px;
         width: auto;
         padding: 0;
+    }
+
+    .article-picture-text-combo {
+        flex-direction: column;
+    }
+
+    .share-bar {
+        flex-direction: column;
     }
 }
 
