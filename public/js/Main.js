@@ -26,7 +26,7 @@ MeriBio = '';
 DylanBio = '<b>Dylan</b> is the engineer and the athlete. After playing hours of sports, he loves using <a href=\'https://www.doterra.com/US/en/p/deep-blue-rub\' target=\'_blank\'>Deep Blue Rub</a>. It relaxes his muscles and gets him back on the court quicker. He also finds himself having trouble sleeping at night due to stuffy noses. Smelling <a href=\'https://www.doterra.com/US/en/p/peppermint-oil\' target=\'_blank\'>Peppermint oil</a> clears his sinuses immediately and makes it easier for him to breath and relax when he is otherwise restless in bed.';
 NatalieBio = '';
 KatyBio = '';
-TannerBio = 'Our fun-loving, easy-going, 17 year old, <b>Tanner</b>, loves music, friends, and school!  He dances his way down the halls, and any other time he gets the chance.  With his Down syndrome diagnosis, Tanner has benefitted from Frankincense daily since he was a baby (he needs those anti- oxidants!), but he loves InTune to keep him focused on learning and Triease to breathe freely all year round.';
+TannerBio = '<b>Tanner</b> is our fun-loving, easy-going, 17 year old. He loves music, friends, and school!  He dances his way down the halls, and any other time he gets the chance.  With his Down syndrome diagnosis, Tanner has benefitted from Frankincense daily since he was a baby (he needs those anti- oxidants!), but he loves InTune to keep him focused on learning and Triease to breathe freely all year round.';
 
 
 Amy.addEventListener("mouseenter", function() {

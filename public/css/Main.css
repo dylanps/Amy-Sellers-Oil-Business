@@ -98,17 +98,33 @@ button {
 .more-details-button {
     background-color: white;
     color: #0077B9;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     font-style: normal;
-    line-height: 45px;
+    line-height: 40px;
     border-radius: 16px;
-    width: 300px;
+    width: 250px;
 }
 
 .more-details-button:hover {
     background-color: gold;
     color: white;
+    transition: background-color 0.5s;
+}
+
+.blog-button {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 16px;
+    width: 250px;
+    margin-left: 150px;
+}
+
+.blog-button:hover {
+    background-color: white;
+    color: green;
     transition: background-color 0.5s;
 }
 
@@ -466,11 +482,12 @@ nav a:link {
 
 .kit-name {
     color: #0077B9;
-    font: 36px bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .kit-description {
-    font-size: 24px;
+    font-size: 20px;
     padding: 2%;
     text-align: center;
 }
@@ -955,6 +972,25 @@ li.topic:hover {
         width: auto;
         padding: 0;
     }
+}
+
+/* MIDSIZE */
+@media screen and (max-width: 1360px) {
+
+    #invite-to-about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ten-kids-picture-container {
+        height: auto;
+        width: 100vw;
+    }
+    
+    .ten-kids-picture {
+        height: inherit;
+        width: inherit;
+    }
 
     .kit-row {
         flex-direction: column;
@@ -977,38 +1013,32 @@ li.topic:hover {
     }
 
     .kit-row-center-odd {
-        order: 2;
+        order: 1;
     }
 
     .kit-row-left-odd {
-        order: 1;
+        order: 3;
         width: 100vw;
         height: 50px;
     }
 
     .kit-row-right-odd {
-        order: 3;
+        order: 2;
         width: 100vw;
-    }
-}
-
-/* MIDSIZE */
-@media screen and (max-width: 1360px) {
-
-    #invite-to-about {
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
-    .ten-kids-picture-container {
-        height: auto;
-        width: 100vw;
+    .more-details-button {
+        margin-bottom: 10px;
     }
-    
-    .ten-kids-picture {
-        height: inherit;
-        width: inherit;
+
+    .blog-button {
+        margin-top: 20px;
+        margin-left: 120px;
+        
     }
+
 }
 
   
