@@ -1,8 +1,6 @@
-import { getMaxListeners } from "cluster";
+console.log('main.js loaded');
 
 //code that changes text based on mouse-enter over a profile image.
-
-console.log('main.js loaded');
 
 const Amy = document.getElementById('amy-profile-about');
 const Glen = document.getElementById('glen-profile');
@@ -17,8 +15,8 @@ const Natalie = document.getElementById('natalie-profile');
 const Katy = document.getElementById('katy-profile');
 const Tanner = document.getElementById('tanner-profile');
 
-AmyBio = 'Recovering mother of 10 amazing kids and blessed with 15 grand-children and counting, Amy loves to learn and almost always has a book in hand.  She enjoys scuba-diving in warm water, and exploring new places to learn about the people and plants that live there!  Her favorite oil is the Immortelle blend as she strives to age gracefully, but she loves to wake up with Wild Orange and Peppermint, and wonders what she’s drinking without Slim & Sassy in her water bottle.';
-GlenBio = 'Amazing husband and hardworking dad, his favorite title is “Papa”.  He loves entertaining the littles, teaching them to collect the eggs, ride the quads, and push him into the nearest body of water.  He loves the Serenity duo - Serenity softgels and Oil at bedtime to let him drift off to dreamland so he doesn’t miss his morning run. Copaiba is also this “farmer’s” friend.';
+AmyBio = '<b>Amy</b> is is a recovering mother of 10 amazing kids and blessed with 15 grand-children and counting, Amy loves to learn and almost always has a book in hand.  She enjoys scuba-diving in warm water, and exploring new places to learn about the people and plants that live there!  Her favorite oil is the Immortelle blend as she strives to age gracefully, but she loves to wake up with Wild Orange and Peppermint, and wonders what she’s drinking without Slim & Sassy in her water bottle.';
+GlenBio = '<b>Glen</b> is an amazing husband and hardworking dad, his favorite title is “Papa”.  He loves entertaining the littles, teaching them to collect the eggs, ride the quads, and push him into the nearest body of water.  He loves the Serenity duo - Serenity softgels and Oil at bedtime to let him drift off to dreamland so he doesn’t miss his morning run. Copaiba is also this “farmer’s” friend.';
 IvyBio = '';
 TimBio = '';
 ChelseaBio = '';
