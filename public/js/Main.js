@@ -130,6 +130,7 @@ GlenMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = GlenBio;
     document.getElementById('about-pic').src = '/Images/Glen Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 IvyMobile.addEventListener("click", function() {
@@ -137,6 +138,7 @@ IvyMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = IvyBio;
     document.getElementById('about-pic').src = '/Images/Ivy Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 ChelseaMobile.addEventListener("click", function() {
@@ -144,6 +146,7 @@ ChelseaMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = ChelseaBio;
     document.getElementById('about-pic').src = '/Images/Chelsea Profile.png';
     wdocument.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 TimMobile.addEventListener("click", function() {
@@ -151,6 +154,7 @@ TimMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = TimBio;
     document.getElementById('about-pic').src = '/Images/Tim Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 MeganMobile.addEventListener("click", function() {
@@ -158,6 +162,7 @@ MeganMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = MeganBio;
     document.getElementById('about-pic').src = '/Images/Megan Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 ChadMobile.addEventListener("click", function() {
@@ -165,6 +170,7 @@ ChadMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = ChadBio;
     document.getElementById('about-pic').src = '/Images/Chad Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 MeriMobile.addEventListener("click", function() {
@@ -172,6 +178,7 @@ MeriMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = MeriBio;
     document.getElementById('about-pic').src = '/Images/Meri Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 DylanMobile.addEventListener("click", function() {
@@ -179,6 +186,7 @@ DylanMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = DylanBio;
     document.getElementById('about-pic').src = '/Images/Dylan Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 NatalieMobile.addEventListener("click", function() {
@@ -186,13 +194,15 @@ NatalieMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = NatalieBio;
     document.getElementById('about-pic').src = '/Images/Natalie Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
 
 KatyMobile.addEventListener("click", function() {
     console.log('clicked on Katy');
     document.getElementById('about-info-text').innerHTML = KatyBio;
     document.getElementById('about-pic').src = '/Images/Katy Profile.png';
-    document.getElementById('about-person').scrollIntoView();  
+    document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60); 
 });
 
 TannerMobile.addEventListener("click", function() {
@@ -200,9 +210,8 @@ TannerMobile.addEventListener("click", function() {
     document.getElementById('about-info-text').innerHTML = TannerBio;
     document.getElementById('about-pic').src = '/Images/Tanner Profile.png';
     document.getElementById('about-person').scrollIntoView();
+    window.scrollBy(0,-60);
 });
-
-
 
 // CONTACT PAGE
 
