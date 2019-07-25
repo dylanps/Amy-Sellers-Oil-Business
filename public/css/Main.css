@@ -884,8 +884,11 @@ li.topic:hover {
     justify-content: center;
 }
 
-
-
+.scroll-invite {
+    display: none;
+    color: white;
+    font-weight: bold;
+}
 
 /* CONTACT PAGE */
 
@@ -1101,6 +1104,10 @@ li.topic:hover {
     .mobile-profiles {
         justify-content: space-around;
         flex-direction: row;
+    }
+
+    .scroll-invite {
+        display: block;
     }
 
     #glen-profile {
