@@ -235,6 +235,15 @@ nav a:link {
 
 /* CARD DECK */
 
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card-footer {
+    width: 100%;
+}
+
 .card-deck {
     padding: 0% 10% 2% 10%;
     position: center;
@@ -256,8 +265,8 @@ nav a:link {
 }
 
 .card-img-top {
-    width: inherit;
-    height: auto;
+    max-width: 300px;
+    max-height: 250px;
 }
 
 .kit-price {
@@ -903,6 +912,7 @@ li.topic:hover {
 #contact-left {
     order: 1;
     margin: 3%;
+    width: 70vw;
 }
 
 #contact-right {
