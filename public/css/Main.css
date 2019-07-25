@@ -1208,6 +1208,11 @@ li.topic:hover {
     .share-bar {
         flex-direction: column;
     }
+
+    .card-img-top {
+        max-width: 100vw;
+        max-height: 250px;
+    }
 }
 
 /* MIDSIZE */
