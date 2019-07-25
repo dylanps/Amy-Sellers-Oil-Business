@@ -145,7 +145,7 @@ ChelseaMobile.addEventListener("click", function() {
     console.log('clicked on Chelsea');
     document.getElementById('about-info-text').innerHTML = ChelseaBio;
     document.getElementById('about-pic').src = '/Images/Chelsea Profile.png';
-    wdocument.getElementById('about-person').scrollIntoView();
+    document.getElementById('about-person').scrollIntoView();
     window.scrollBy(0,-60);
 });
 
