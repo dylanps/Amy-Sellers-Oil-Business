@@ -7,9 +7,10 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
-const path = require('path');
-const app = express();
+const path = require('path')
 const request = require('request');
+
+const app = express();
 
 // set port
 const PORT = process.env.PORT || 5000;
@@ -81,7 +82,7 @@ app.post('/newsletter-signup', (req, res) => {
     if(!email) {
         console.log('no email submitted');
         return;
-    };
+    }
 
     // construct request data
 

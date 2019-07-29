@@ -438,6 +438,17 @@ nav a:link {
     padding: 0% 1%;
 }
 
+.ee-page-header {
+    background-color: #114266;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.ee-page-intro {
+    font-size: 20px;
+}
+
 .kit-row {
     height: 321px;
     color: white;
