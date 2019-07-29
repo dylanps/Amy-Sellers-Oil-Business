@@ -442,7 +442,15 @@ nav a:link {
     background-color: #114266;
     color: white;
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    height: 150px;
+}
+
+.ee-page-header a:link, .ee-page-header a:visited {
+    color: gold;
+    text-decoration: none;
 }
 
 .ee-page-intro {
@@ -1266,7 +1274,7 @@ li.topic:hover {
     .kit-row-right-even {
         order: 3;
         width: 100vw;
-        height: 50px;
+        height: 25px;
     }
 
     .kit-row-center-odd {
@@ -1276,7 +1284,7 @@ li.topic:hover {
     .kit-row-left-odd {
         order: 3;
         width: 100vw;
-        height: 50px;
+        height: 25px;
     }
 
     .kit-row-right-odd {
