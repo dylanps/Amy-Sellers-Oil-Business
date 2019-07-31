@@ -240,32 +240,44 @@ nav a:link {
 
 /* CARD DECK */
 
-.card {
-    display: flex;
-    align-items: center;
+.card-body {
+    
+}
+
+.card-inner {
+    position: relative;
+}
+
+.card-title {
+
+}
+
+.card-text {
+    padding: 0 0 50px 0;
 }
 
 .card-footer {
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .card-deck {
-    padding: 0% 10% 2% 10%;
-    position: center;
     width: 100%;
-}
-
-.card-link .card:hover {
-    box-shadow: -5px 5px 10px 5px rgba(177, 177, 177, 0.616);
-    transition: box-shadow 0.2s;
+    padding: 2% 0%;
+    margin: 0% 1%;
+    margin-bottom: 0%;
 }
 
 .card-link {
     color: black;
     border: 0;
+    height: 100%;
 }
 
 .card-link:hover {
+    box-shadow: -5px 5px 10px 5px rgba(177, 177, 177, 0.616);
+    transition: box-shadow 0.2s;
     color: #114266;
 }
 
@@ -324,19 +336,17 @@ nav a:link {
 
 #home-greeting {
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
     background-image: linear-gradient(to left top, #114266 80%, white);
     background-color: #114266;
 }
 
 #home-greeting-img-container {
-    order: -1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em 0;
+    min-width: 30%;
 }
 
 #home-greeting-img {
@@ -345,9 +355,7 @@ nav a:link {
 }
 
 #home-greeting-text {
-    order: 1;
     color: white;
-    padding: 0 3em;
 }
 
 .intro-video {
@@ -445,7 +453,7 @@ nav a:link {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    height: 150px;
+    min-height: 150px;
 }
 
 .ee-page-header a:link, .ee-page-header a:visited {
@@ -455,6 +463,8 @@ nav a:link {
 
 .ee-page-intro {
     font-size: 20px;
+    text-align: center;
+    padding: 0% 1%;
 }
 
 .kit-row {
@@ -614,6 +624,10 @@ li.topic:hover {
     color: black;
 }
 
+.invite-see-more {
+    float: right;
+}
+
 .article-heading {
     color: #0077B9;
     font-size: 20px;
@@ -760,8 +774,10 @@ li.topic:hover {
     display: flex;
     flex-direction: row;
     order: 4;
+    text-align: center;
     justify-content: center;
-    margin: -18% 0% 0% 0%;
+    padding: 0 200px;
+    width: 50%;
 }
 
 #about-family-row-5 {
@@ -1236,6 +1252,10 @@ li.topic:hover {
     .ee-kit-image {
         height: auto;
         width: 100vw;
+    }
+
+    .card-deck {
+        padding: 1% 5%;
     }
 }
 
