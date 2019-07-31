@@ -69,7 +69,7 @@ app.post('/sendEmail', (req, res) => {
 
     console.log('Email Sent index.js!');
 
-    res.redirect('/contact.html');
+    res.redirect('/contact-sent.html');
 });
 
 //Newsletter signup
@@ -81,7 +81,8 @@ app.post('/newsletter-signup', (req, res) => {
 
     if(!email) {
         console.log('no email submitted');
-        return;
+        
+        res.redirect('/');
     }
 
     // construct request data
@@ -122,6 +123,6 @@ app.post('/newsletter-signup', (req, res) => {
         }
     });
 
-    res.redirect('/');
+    res.redirect('/index-submitted.html');
 });
 

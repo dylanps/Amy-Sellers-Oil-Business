@@ -57,7 +57,7 @@
     <nav>  
         <ul class="nav-ul">
           <li class="nav-li">
-            <a href="">Home<span class="sr-only">(current)</span></a>
+            <a href="index.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-li">
             <a href="essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
@@ -194,12 +194,17 @@
 
   <form method="POST" action="/newsletter-signup" id="email-newsletter-form">
     <input type="email" class="input-field" name="email" placeholder=" Email" id="newsletter-input" required>
-    <input type="submit" class="submit-button" id="newsletter-submit">
+    <!-- <input type="submit" class="submit-button" id="newsletter-submit"> -->
   </form>
+
+  <div class="submitted-message">
+    <p>Thank you for subscribing!</p>
+  </div>
 </div>
 
   <body>
-    <!-- CONNECT TO JS FILE -->
+    <!-- CONNECT TO MAIN FILE -->
+    <script src="/js/newsletter.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
