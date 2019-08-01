@@ -18,40 +18,44 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 // view engine setup
-app.engine('handlebars', exphbs);
-app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, 'views'));
+// app.engine('handlebars', exphbs);
+// app.set('view engine', 'handlebars');
+// app.set('views', path.join(__dirname, 'views'));
 
 // Set a static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 // body parser middleware
-app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 // main back-end code starts here
 
 sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
 
 app.post('/sendEmail', (req, res) => {
-    
+
+    console.log(req.body);
+
     var name = req.body.name;
     var senderEmail = req.body.email;
+    var message = req.body.msg;
     var HTMLmessage = `
     <p>Amy,</p>
 
-    <p> ${req.body.message}</p>
+    <p> ${message}</p>
 
-    <p> ${req.body.name}</p>
-    <p> ${req.body.email}</p>
+    <p> ${name}</p>
+    <p> ${senderEmail}</p>
     `;
+    
     var message = `
     Amy,
 
-    ${req.body.message}
+    ${message}
 
-    ${req.body.name}
-    ${req.body.email}
+    ${name}
+    ${senderEmail}
     `;
     
     var sendTo = 'amy@10kidslater.com';
@@ -68,8 +72,6 @@ app.post('/sendEmail', (req, res) => {
     sgMail.send(msg);
 
     console.log('Email Sent index.js!');
-
-    res.redirect('/contact-sent.html');
 });
 
 //Newsletter signup
@@ -81,8 +83,8 @@ app.post('/newsletter-signup', (req, res) => {
 
     if(!email) {
         console.log('no email submitted');
-        
-        res.redirect('/');
+    
+        return;
     }
 
     // construct request data
@@ -110,6 +112,8 @@ app.post('/newsletter-signup', (req, res) => {
         body: postData
     }
 
+    console.log('got this far');
+
     request(options, (err, response, body) => {
         if(err) {
             console.log('mailchimp request failed');
@@ -123,6 +127,7 @@ app.post('/newsletter-signup', (req, res) => {
         }
     });
 
-    res.redirect('/index-submitted.html');
+    console.log('got this far 2');
+
 });
 

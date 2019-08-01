@@ -212,14 +212,3 @@ TannerMobile.addEventListener("click", function() {
     document.getElementById('about-person').scrollIntoView();
     window.scrollBy(0,-60);
 });
-
-// CONTACT PAGE
-
-sendButton = document.getElementById('contact-page-send');
-
-sendButton.addEventListener("click", function(){
-
-    document.getElementById('contact-name-input').val() = '';
-    document.getElementById('contact-email-input').val() = '';
-    document.getElementById('contact-message-input').val() = '';
-});
