@@ -1,154 +1,144 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144546250-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-144546250-1');
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144546250-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    gtag('config', 'UA-144546250-1');
+  </script>
 
-    <!-- Meta tags for SEO - FILL IN DESCRIPTION AND KEY WORDS HERE! -->
-    <meta name="description" content="150-160 words">
-    <meta name="keywords" content="Essential oils, Doterra, Placerville, Sacramento, Amy Sellers">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Meta tags for SEO - FILL IN DESCRIPTION AND KEY WORDS HERE! -->
+  <meta name="description" content="150-160 words">
+  <meta name="keywords" content="Essential oils, Doterra, Placerville, Sacramento, Amy Sellers">
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="../css/Main.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- The tile is the label for the tab in the browser -->
-    <title>10 Kids Later | Welcome</title>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../css/Main.css">
 
-    <!-- LOAD EMAILJS -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_7JCBclOAwgVAIE89BG8Zb");
-       })();
-    </script>
+  <!-- The tile is the label for the tab in the browser -->
+  <title>10 Kids Later | Welcome</title>
 
-    <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('home-contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              this.contact_number.value = Math.random() * 100000 | 0;
-              emailjs.sendForm('contact_service', 'contact_template', this);
-          });
-      }
-    </script>
+  <!-- LOAD EMAILJS -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+      (function(){
+        emailjs.init("user_7JCBclOAwgVAIE89BG8Zb");
+      })();
+  </script>
 
-  </head>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('home-contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('contact_service', 'contact_template', this);
+        });
+    }
+  </script>
 
-<!-- Header -->
+</head>
+
+<body>
+
+  <!-- Header -->
   <header>
-    <a href="index.html"><img src="/Images/Small Logo.svg" alt="?" class="nav-logo"></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <!--NAVBAR-->
-    <nav>  
-        <ul class="nav-ul">
-          <li class="nav-li">
-            <a href="../index.html">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-li">
-            <a href="../essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-li">
-            <a href="../answerswithamy.html">Answers with Amy<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-li">
-            <a href="../about.html">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-li">
-            <a href="../contact.html">Contact<span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
-      </nav>
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-      </label>
+      <a href="index.html"><img src="/Images/Small Logo.svg" alt="?" class="nav-logo"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <!--NAVBAR-->
+      <nav>  
+          <ul class="nav-ul">
+            <li class="nav-li">
+              <a href="../index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-li">
+              <a href="../essentialoils.html">Essential Oils<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-li">
+              <a href="../answerswithamy.html">Answers with Amy<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-li">
+              <a href="../about.html">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-li">
+              <a href="../contact.html">Contact<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
   </header>
 
-  <div class="article-container">
-    <div>
+<!-- BLOG POST -->
+
+  <article class="blog-post">
+
+    <div class="article-title-container">
+        <h1 class="article-title">Article Title</h1>
+        <small>Last updated (Date)</small>
         <a href="../answerswithamy.html">see more articles</a>
     </div>
-    <h1 class="article-title">Article Title</h1>
-    <hr class="blog-hr">
-    <small>Last updated (Date)</small>
 
-    <div class="article-picture-text-combo">
-        <div>
-            <h6 class="article-heading">
-                Heading 1
-            </h6>
-            <p class="article-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
-            </p>
-            <p class="article-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-            <p class="article-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-            <hr class="blog-hr-small">
-            <h6 class="article-heading">
-                Heading 2
-            </h6>
-            <p class="article-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-            <p class="article-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-            <p class="article-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-        </div>
-        <div>
-            <img src="../Images/milkyway.jpg" alt="?">
-        </div>
+    <div class="blog-hr">
+
     </div>
-    <hr class="blog-hr-small">
-    <div>
+        
+    <section class="intro">
         <h6 class="article-heading">
-            Heading 3
+            Heading 1
         </h6>
         <p class="article-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
         </p>
+    </section>
+
+    <figure class="blog-img-1">
+      <img src="../Images/milkyway.jpg" alt="?" class="blog-img">
+    </figure>
+
+    <section class="main">
+        <h6 class="article-heading">
+            Heading 2
+        </h6>
         <p class="article-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
         </p>
+    </section>
+
+    <blockquote class="article-hightlight">
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+    </blockquote>
+
+    <section class="end">
+        <h6 class="article-heading">
+            Heading 4
+        </h6>
         <p class="article-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
+            <br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat sit placeat praesentium ad dolores odio sequi perspiciatis ea neque architecto ipsam, aliquid illum alias? Officiis tenetur ad laudantium repudiandae.
         </p>
-    </div>
-    <div>
-        <p class="article-hightlight">
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
-        </p>
-    </div>
-    <div>
-            <p class="article-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-            <p class="article-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-            <p class="article-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus! Doloribus soluta beatae reiciendis architecto. Dicta, asperiores nostrum nihil consectetur nesciunt atque quisquam, consequuntur inventore, veniam rerum aliquid dolore corrupti!
-            </p>
-    </div>
+    </section>
     <!-- SHARE BAR -->
     <!-- <div class="share-bar">
         <div class="share-invite">
@@ -167,9 +157,19 @@
         </div>
     </div> -->
 
-  </div>
+    <footer class="grid-footer">
+        <div class="social-networks">
+            <a href="contact.html"><img src="../Images/Email Icon.png" class="email-icon" alt="?"></a>
+            <a href="https://www.facebook.com/10kidslater/" class="facebook" target="_blank"><img src="../Images/Facebook-Icon.svg" class="facebook-icon" alt="?"></a> 
+            <a href="https://www.linkedin.com/in/amy-sellers-3926ba3/" class="linkedin" target="_blank"><img src="../Images/LinkedIn-Icon.svg" class="linkedin-icon" alt="?"></a>
+        </div>
+        <div class="footer-copyright">
+            <p>10 Kids Later &copy; <script>document.write(new Date().getFullYear())</script>  |  Copyright </p>
+        </div>
+    </footer>
 
-  <body>
+  </article>
+
     <!-- CONNECT TO MAIN FILE -->
     <!-- <script src="../js/Main.js"></script> -->
 
@@ -178,17 +178,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 
-  <footer id="myFooter">
-      <div class="social-networks">
-          <a href="contact.html"><img src="../Images/Email Icon.png" class="email-icon" alt="?"></a>
-          <a href="https://www.facebook.com/10kidslater/" class="facebook" target="_blank"><img src="../Images/Facebook-Icon.svg" class="facebook-icon" alt="?"></a> <!--UPDATE THIS LINK TO YOUR FB PAGE-->
-          <a href="https://www.linkedin.com/in/amy-sellers-3926ba3/" class="linkedin" target="_blank"><img src="../Images/LinkedIn-Icon.svg" class="linkedin-icon" alt="?"></a> <!--UPDATE THIS LINK TO YOUR FB PAGE-->
-      </div>
-      <div class="footer-copyright">
-          <p>10 Kids Later &copy; <script>document.write(new Date().getFullYear())</script>  |  Copyright </p>
-      </div>
-  </footer>
+  
  
 </html>
