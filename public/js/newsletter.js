@@ -20,16 +20,12 @@ newsletterForm.addEventListener("submit", function(e) {
     // swap out the submit button with a message saying thanks for subscribing
 
     var newsletterDiv = document.createElement('div');
-    console.log('created div!');
 
     newsletterDiv.setAttribute('class', 'submitted-message');
-    console.log('set attribute!');
 
     newsletterDiv.innerHTML += '<p>Thank you for subscribing!</p>';
-    console.log('added inner html!');
 
     document.getElementById('newsletter-form-container').appendChild(newsletterDiv);
-    console.log('appended child!');
 
     document.getElementById('newsletter-input').setAttribute('style', 'display: none');
     document.getElementById('newsletter-submit').setAttribute('style', 'display: none');
