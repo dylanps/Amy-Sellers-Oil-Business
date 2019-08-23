@@ -30,7 +30,5 @@ newsletterForm.addEventListener("submit", function(e) {
     document.getElementById('newsletter-input').setAttribute('style', 'display: none');
     document.getElementById('newsletter-submit').setAttribute('style', 'display: none');
 
-
-
     console.log('form submitted!');
 });
