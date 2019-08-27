@@ -560,7 +560,7 @@ nav a:link {
 
 .awa-page-container {
     display: grid;
-    margin-top: 60px;
+    margin-top: 80px;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 8fr auto;
     grid-gap: 2%;
@@ -586,6 +586,7 @@ nav a:link {
     grid-auto-rows: minmax(50px, auto);
     justify-content: center;
     justify-items: center;
+    /* margin-bottom: 120px; */
 }
 
 #awa-more-topics {
@@ -1137,7 +1138,7 @@ li.topic:hover {
 #contact-message-input {
     order: 5;
     width: 100%;
-    height: 150px;
+    height: 300px;
     border-radius: 10px;
     border: 0;
     background-color: #E5E5E5;
@@ -1524,6 +1525,19 @@ li.topic:hover {
 
     .blog-button {
         margin-top: 20px;
+    }
+
+    .awa-page-container {
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 20fr auto;
+        grid-gap: 2%;
+    
+        grid-template-areas:
+        "   .    title   title  .   "
+        "  hr     hr      hr    hr  "
+        "  featured featured featured featured"
+        "footer footer footer footer"
+        
     }
 }
 
