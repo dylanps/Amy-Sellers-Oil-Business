@@ -342,7 +342,7 @@ nav a:link {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    background-image: linear-gradient(to left top, #114266 80%, white);
+    background-image: linear-gradient(to left, #114266 50%, #3178aa);
     background-color: #114266;
 }
 
@@ -369,6 +369,7 @@ nav a:link {
 
 #invite-to-about {
     background-color: #0077b9;
+    background-image: linear-gradient(to left, #0077b9 50%, #016296);
     margin: 1% 0% 0% 0%;
     color: white;
     text-align: center;
@@ -424,6 +425,7 @@ nav a:link {
 #newsletter-form-container {
     height: 180px;
     background-color: #114266;
+    background-image: linear-gradient(to left, #114266 50%, #1e5379);
     color: white;
     display: flex;
     flex-direction: column;
@@ -452,12 +454,14 @@ nav a:link {
 
 .ee-page-header {
     background-color: #114266;
+    background-image: linear-gradient(to left, #114266 20%, #3178aa);
     color: white;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     min-height: 200px;
+    padding-top: 20px;
 
 }
 
@@ -483,6 +487,7 @@ nav a:link {
 
 .kit-row-left-odd {
     background-color: #11222dc5;
+    background-image: linear-gradient(to left, #3a505f 50%, #405b6d);
     width: 5%;
 }
 
@@ -495,6 +500,7 @@ nav a:link {
 
 .kit-row-right-odd {
     background-color: #0077B9;
+    background-image: linear-gradient(to left, #0077b9 50%, #016296);
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -503,7 +509,8 @@ nav a:link {
 }
 
 .kit-row-left-even {
-    background-color: #11222dc5;
+    background-color: #3a505f;
+    background-image: linear-gradient(to left, #3a505f 50%, #405b6d);
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -520,6 +527,7 @@ nav a:link {
 
 .kit-row-right-even {
     background-color: #0077B9;
+    background-image: linear-gradient(to left, #0077b9 50%, #016296);
     width: 5%;
 }
 
@@ -852,6 +860,7 @@ li.topic:hover {
     width: 30%;
     color: white;
     background-color: #0077B9;
+    background-image: linear-gradient(to left, #0077b9 50%, #016296);
     margin: 0;
     text-align: center;
 }
@@ -1386,6 +1395,10 @@ li.topic:hover {
         padding: 0;
     }
 
+    #home-greeting-img-container {
+        margin-bottom: 20px;
+    }
+
     #about-invitation {
         order: 1;
         display: flex;
@@ -1395,6 +1408,14 @@ li.topic:hover {
         height: 250px;
         width: auto;
         padding: 0;
+    }
+
+    #invite-to-about {
+        padding: 0% 2%;
+    }
+
+    #newsletter-form-container { 
+        padding: 0% 2%;
     }
 
     .article-picture-text-combo {
@@ -1412,6 +1433,14 @@ li.topic:hover {
 
     .ee-kit-image {
         height: auto;
+        width: 100vw;
+    }
+
+    #contact-right {
+        display: none;
+    }
+
+    #contact-left {
         width: 100vw;
     }
 
