@@ -1528,16 +1528,7 @@ li.topic:hover {
     }
 
     .awa-page-container {
-        grid-template-columns: 1fr 2fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 20fr auto;
-        grid-gap: 2%;
-    
-        grid-template-areas:
-        "   .    title   title  .   "
-        "  hr     hr      hr    hr  "
-        "  featured featured featured featured"
-        "footer footer footer footer"
-        
+        grid-template-rows: 0.1fr 0.1fr 10fr auto;
     }
 }
 
