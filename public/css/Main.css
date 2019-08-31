@@ -108,12 +108,13 @@ button {
 .more-details-button {
     background-color: white;
     color: #0077B9;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     font-style: normal;
-    line-height: 40px;
+    line-height: 15px;
     border-radius: 16px;
-    width: 250px;
+    height: 30px;
+    width: 150px;
 }
 
 .more-details-button:hover {
@@ -356,6 +357,8 @@ nav a:link {
 #home-greeting-img {
     width: 250px;
     height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 #home-greeting-text {
@@ -870,6 +873,11 @@ li.topic:hover {
     margin-top: 1em;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+}
+
+.about-page-hr {
+    border: 8px solid white;
 }
 
 #about-amy-text {
@@ -887,6 +895,12 @@ li.topic:hover {
     margin: 0;
     padding-top: 1em;
     position: relative;
+}
+
+#about-family-invite {
+    order: 8;
+    margin-top: 20px;
+    text-align: center;
 }
 
 #about-family-row-1 {
@@ -978,6 +992,9 @@ li.topic:hover {
     width: 15%;
     height: 15%;
     z-index: 2;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: black 10px;
 }
 
 .profile:hover {
@@ -1447,6 +1464,13 @@ li.topic:hover {
 
     .card-deck {
         padding: 1% 5%;
+    }
+
+    nav ul li:hover {
+        background-color: rgba(0, 120, 185, 0.329);
+        color: white;
+        transition: background-color 0.5s;
+        text-decoration: none;
     }
 
     .blog-post {
